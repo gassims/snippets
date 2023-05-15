@@ -72,16 +72,16 @@ body {
 <!-- The four columns -->
 <div class="row">
   <div class="column">
-    <img src="https://cdn.statically.io/img/www.dhis2academy.org/digital-annual-conference-2021/posters/dhis2pstrs/0001a_new.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    <img src="img_nature.jpg" alt="something" style="width:100%" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="https://cdn.statically.io/img/www.dhis2academy.org/digital-annual-conference-2021/posters/dhis2pstrs/0002a_new.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+    <img src="img_snow.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="https://cdn.statically.io/img/www.dhis2academy.org/digital-annual-conference-2021/posters/dhis2pstrs/0003b_new.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    <img src="img_mountains.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="https://cdn.statically.io/img/www.dhis2academy.org/digital-annual-conference-2021/posters/dhis2pstrs/0004a_replace.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    <img src="img_lights.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
   </div>
 </div>
 
@@ -95,8 +95,10 @@ body {
 function myFunction(imgs) {
   var expandImg = document.getElementById("expandedImg");
   var imgText = document.getElementById("imgtext");
-  expandImg.src = imgs.src;
-  imgText.innerHTML = imgs.alt;
+  
+  if(imgs.alt == "something"){
+  expandImg.src = "https://cdn.statically.io/img/www.dhis2academy.org/digital-annual-conference-2021/posters/dhis2pstrs/0004a_replace.jpg";
+  }
   expandImg.parentElement.style.display = "block";
 }
 </script>
