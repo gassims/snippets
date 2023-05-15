@@ -65,23 +65,26 @@ body {
 <body>
 
 <div style="text-align:center">
-  <h2>Tabbed Image Gallery</h2>
-  <p>Click on the images below:</p>
+  <h2>DAC2023 Posters</h2>
+  <p>Click on the button below:</p>
 </div>
 
 <!-- The four columns -->
 <div class="row">
   <div class="column">
-    <img src="img_nature.jpg" alt="something" style="width:100%" onclick="myFunction(this);">
+    <button name="anticorruption" style="width:100%" onclick="myFunction(this);">anticorruption</button>
   </div>
   <div class="column">
-    <img src="img_snow.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+    <button name="cdc" style="width:100%" onclick="myFunction(this);">CDC</button>
   </div>
   <div class="column">
-    <img src="img_mountains.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    <button name="covid19" style="width:100%" onclick="myFunction(this);">covid19</button>
   </div>
   <div class="column">
-    <img src="img_lights.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    <button name="customapp" style="width:100%" onclick="myFunction(this);">customapp</button>
+  </div>
+  <div class="column">
+    <button name="datause" style="width:100%" onclick="myFunction(this);">datause</button>
   </div>
 </div>
 
@@ -96,8 +99,17 @@ function myFunction(imgs) {
   var expandImg = document.getElementById("expandedImg");
   var imgText = document.getElementById("imgtext");
   
-  if(imgs.alt == "something"){
+  if(imgs.name == "cdc"){
   expandImg.src = "https://cdn.statically.io/img/www.dhis2academy.org/digital-annual-conference-2021/posters/dhis2pstrs/0004a_replace.jpg";
+  }
+  else if(imgs.name == "covid19") {
+   expandImg.src = "https://cdn.statically.io/img/www.dhis2academy.org/digital-annual-conference-2021/posters/dhis2pstrs/0005a_resize.jpg";
+  }
+  else if(imgs.name == "customapp") {
+   expandImg.src = "https://cdn.statically.io/img/www.dhis2academy.org/digital-annual-conference-2021/posters/dhis2pstrs/0006a_resize.jpg";
+  }
+  else if(imgs.name == "datause") {
+   expandImg.src = "https://cdn.statically.io/img/www.dhis2academy.org/digital-annual-conference-2021/posters/dhis2pstrs/0007a.jpg";
   }
   expandImg.parentElement.style.display = "block";
 }
