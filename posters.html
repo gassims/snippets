@@ -5,31 +5,30 @@
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-
-   <!-- scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="./src/form.js"></script>
-
 </head>
 
 <body>
+  
+  
+  
+
+  
+  
+
 
 <div class="main">
   <div class="container">
     
       <hr>
       <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('all')"> Show all</button>
           <button class="btn" onclick="filterSelection('anticorruption')"> Anti-corruption</button>
           <button class="btn" onclick="filterSelection('cdc')"> CDC</button>
           <button class="btn" onclick="filterSelection('covid19')"> COVID-19</button>
           <button class="btn" onclick="filterSelection('customapp')"> Custom App</button>
           <button class="btn" onclick="filterSelection('datause')"> Data Use</button>
           <button class="btn" onclick="filterSelection('hiv')"> HIV</button>
-          <button class="btn" onclick="filterSelection('integration')"> Integration</button>
+          <button class="btn active" onclick="filterSelection('integration')"> Integration</button>
           <button class="btn" onclick="filterSelection('interoparability')"> Interoperability</button>
           <button class="btn" onclick="filterSelection('pepfar')"> PEPFAR</button>
           <button class="btn" onclick="filterSelection('privacy')"> Privacy</button>
@@ -48,7 +47,7 @@
   <hr>
   </div>
 
-<!-- Portfolio Gallery Grid -->
+
 <div class="row">
   <div class="box author1 datause hiv integration pepfar show">
     <div class="content">
@@ -57,7 +56,7 @@
       <img loading="lazy" src="https://cdn.statically.io/img/www.dhis2academy.org/digital-annual-conference-2021/posters/dhis2pstrs/0001a_new.jpg" alt="DHIS2" style="width:100%">
     </div>
   </div>
-  <div class="box author2 covid19 customapp interoparability show">
+  <div class="box author2 covid19 customapp interoparability">
     <div class="content">
       <h3>Poster - 2</h3>
       <h5>Organization: Universitat Politècnica de Catalunya</h5>
@@ -65,7 +64,7 @@
     </div>
   </div>
   
-  <div class="box author3 hiv cdc pepfar show">
+  <div class="box author3 hiv cdc pepfar">
     <div class="content">
       <h3>Poster - 3</h3>
       <h5>Organization: CIDRZ</h5>
@@ -74,7 +73,7 @@
   </div>
   
 
-  <div class="box author4 anticorruption research privacy show">
+  <div class="box author4 anticorruption research privacy">
     <div class="content">
       <h3>Poster - 4</h3>
       <h5>Organization: U4 Anti-corruption resource centre</h5>
@@ -91,7 +90,7 @@
     </div>
   </div> -->
   
-  <div class="box author5 datause show">
+  <div class="box author5 datause">
     <div class="content">
       <h3>Poster - 5</h3>
       <h5>Organization: </h5>
@@ -108,7 +107,7 @@
     </div>
   </div>
   
-  <div class="box author7 hiv datause interoparability show">
+  <div class="box author7 hiv datause interoparability">
     <div class="content">
       <h3>Poster - 7</h3>
       <h5>Organization: FHI360</h5>
@@ -116,7 +115,7 @@
     </div>
   </div>
   
-  <div class="box author8 hiv datause metadatapackage show">
+  <div class="box author8 hiv datause metadatapackage">
     <div class="content">
       <h3>Poster - 8</h3>
       <h5>Organization: FHI 360 - BAO Systems</h5>
@@ -124,7 +123,7 @@
     </div>
   </div>
    
-   <div class="box author9 covid19 tracker interoparability show">
+   <div class="box author9 covid19 tracker interoparability">
     <div class="content">
       <h3>Poster - 9</h3>
       <h5>Organization: Castellum Digital Indonesia, University of Oslo</h5>
@@ -132,7 +131,7 @@
     </div>
   </div>
   
-  <div class="box author10 covid19 show">
+  <div class="box author10 covid19">
     <div class="content">
       <h3>Poster - 10</h3>
       <h5>Organization: Castellum Digital Indonesia, University of Oslo</h5>
@@ -140,7 +139,7 @@
     </div>
   </div>
    
-   <div class="box author11 covid19 mobileapplication show">
+   <div class="box author11 covid19 mobileapplication">
     <div class="content">
       <h3>Poster - 11</h3>
       <h5>Organization: Castellum Digital Indonesia, University of Oslo</h5>
@@ -148,7 +147,7 @@
     </div>
   </div>
 
-<div class="box author12 research evaluation show">
+<div class="box author12 research evaluation">
     <div class="content">
       <h3>Poster - 12</h3>
       <h5>Organization: Makerere University</h5>
@@ -162,7 +161,7 @@
 <!-- END GRID -->
 </div>
 
-<!-- END MAIN -->
+
 </div>
 
 <script>
@@ -210,4 +209,7 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 </script>
+
+
+
 </body>
