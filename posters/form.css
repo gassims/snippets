@@ -1,0 +1,109 @@
+html,
+body {
+  height: 100%;
+  margin: 10px;
+}
+.wrapper {
+  display: grid;
+  padding: 10px;
+  grid-template-rows: 100%;
+  grid-template-columns: 100%;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+}
+
+/* .box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 150%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.responsive {
+  max-width: 96%;
+  height: auto;
+  border-radius: 2%;
+  padding: 10px;
+}
+
+/* Filters */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  margin: auto;
+}
+
+.row {
+  margin: 2px;
+}
+
+/* Add padding BETWEEN each box */
+.row,
+.row > .box {
+  padding: 10px;
+}
+
+/* Create three equal boxs that floats next to each other */
+.box {
+  border-radius: 5px;
+  float: left;
+  width: 50%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: rgb(49, 49, 49);
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+}
+
+img {
+  border-radius: 5px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
