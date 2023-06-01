@@ -34,7 +34,7 @@ Organization: Society for Family Health, Nigeria `,
 
 
 const organizationsObj = {
-  author1: 'Organization: RTI',
+  author1: 'Organization: Society for Family Health, Nigeria',
   author2: 'Organization: Universitat PolitÃ¨cnica de Catalunya',
   author3: 'Organization: CIDRZ',
   author4: 'Organization: U4 Anti-corruption resource centre',
