@@ -1,5 +1,5 @@
 const emailsObj = {
-  author1: 'alasu@rti.org',
+  author1: 'bulama@sfhnigeria.org',
   author2: 'petar@essi.upc.edu',
   author3: 'vikwatokamanga@gmail.com',
   author4: 'daniel.hausenkamph@cmi.no',
@@ -16,7 +16,8 @@ const emailsObj = {
 
 
 const titlesObj = {
-  author1: 'Poster-1: The Digital Transformation of the HIV Care and Treatment Program at Juba Military HospitalÂ in South Sudan',
+  author1: `Poster-1: Effect of C4C ON Contraceptive Uptake Among Married Adolescent Girls (15-19 years) In Public Health Facilities In Kano And Jigawa States: NDHIS Retrospective Study On MMA Republication In Northern Nigeria
+Organization: Society for Family Health, Nigeria `,
   author2: 'Poster-2: Go.Data-DHIS2 interoperability app',
   author3: 'Poster-3: Development of an harmonized monitoring and reporting system in Zambia using DHIS2',
   author4: 'Poster-4: Integratingâ€¯anti-corruption thinking in HMIS: Improving transparency and promoting equity',
