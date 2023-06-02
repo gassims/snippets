@@ -2,16 +2,16 @@ const emailsObj = {
   author1: 'bulama@sfhnigeria.org',
   author2: 'VDaudi@fhi360.org',
   author3: 'etideswell@sightsavers.org',
-  author4: 'daniel.hausenkamph@cmi.no',
-  author5: 'tsegshsmart@gmail.com',
-  author6: 'timilsina.dwas@gmail.com',
-  author7: 'GParola@fhi360.org',
-  author8: 'KStankevitz@fhi360.org',
-  author9: 'yuda.karnaen11@gmail.com',
-  author10: 'ekadewi.mulyati@gmail.com',
-  author11: 'yuda.karnaen11@gmail.com',
-  author12: 'maggien20099@gmail.com',
-  author13: 'kkelly@baosystems.com'
+  author4: 'parasisworking@gmail.com',
+  author5: 'JLehloka@fhi360.org',
+  author6: 'gmbalilaki@monitafrica.com',
+  author7: 'fmumba@clintonhealthaccess.org',
+  author8: '',
+  author9: '',
+  author10: '',
+  author11: '',
+  author12: '',
+  author13: ''
 };
 
 
@@ -20,16 +20,16 @@ const titlesObj = {
 Organization: Society for Family Health, Nigeria `,
   author2: `Poster-2: Use of DHIS2 tracker in peer-led programmatic mapping and validation reduces implementation time and manpower in limited resource settings: Case of six regions in Tanzania`,
   author3: `Poster-3: The Sightsavers Journey to Integrated Data Collection with DHIS2`,
-  author4: 'Poster-4: Integratingâ€¯anti-corruption thinking in HMIS: Improving transparency and promoting equity',
-  author5: 'Poster-5: How DHIS2 become cornerstone for data use?',
-  author6: 'Poster-6: NepalEHR and DHIS2 integration; Automation in submitting facility based digital data into National HMIS using DHIS2 platform in Nepal',
-  author7: 'Poster-7: Interface Between DHIS2 (aggregate) and Power BI for Analytics and Visualization',
-  author8: "Poster-8: Standardized DHIS2 Tracker Metadata Package for HIV Programs Indonesia's COVID19 Cases System and DHIS2 Contact Tracing : DHIS2 Integration Process from other System",
-  author9: 'Poster-9: DHIS2 Helpdesk Unit as the a Main Key of Knowledge',
-  author10: 'Poster-10: DHIS2: Contact Tracing Case Study in Indonesia',
-  author11: 'Poster-11: DHIS2 Contact Tracing Mobile Application: Local Design and Implementation in Indonesia',
-  author12: 'Poster-12: Validation of the Performance-based Evaluation Framework for Electronic Health Information Systems: Case of Uganda',
-  author13: 'Poster-13: Leveraging a DHIS2 Custom Dashboard App to Make Standard Analysis More Accessible to Users'
+  author4: `Poster-4: Barriers to Effective Implementation of DHIS2 for Surveillance in Limited Resource Healthcare Settings: A Case of Nepal`,
+  author5: `Poster-5: Designed peer-led DHIS2 tracker for key population HIV services: Approaches to capacity building in system use for sustainability`,
+  author6: `Poster-6: The AfyaSS Story in Tanzania`,
+  author7: `Poster-7: Towards Universal Health Coverage: Improving the quality of immunization data through DHIS2 System-based Data Validation checks and Integrity Rules`,
+  author8: ``,
+  author9: ``,
+  author10: ``,
+  author11: ``,
+  author12: ``,
+  author13: ``
 };
 
 
@@ -37,10 +37,10 @@ const organizationsObj = {
   author1: 'Organization: Society for Family Health, Nigeria',
   author2: 'Organization: Epic Project - Tanzania',
   author3: 'Organization: Sightsavers',
-  author4: 'Organization: U4 Anti-corruption resource centre',
-  author5: 'Organization: ',
-  author6: 'Organization: Nyaya Health Nepal (NHN)',
-  author7: 'Organization: FHI360',
+  author4: `Organization: Foundation for Innovative New Diagnostics (FIND)`,
+  author5: 'Organization: EpiC project - Lesotho',
+  author6: `Organization: monitafrica`,
+  author7: `Organization: Clinton Health Access Initiative (CHAI)  Zambia`,
   author8: 'Organization: FHI 360 - BAO Systems',
   author9: 'Organization: Castellum Digital Indonesia & University of Oslo',
   author10: 'Organization: Castellum Digital Indonesia & University of Oslo',
