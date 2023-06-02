@@ -114,7 +114,7 @@ $(function () {
 
     $.ajax({
       type: 'POST',
-      url: 'handler.php',
+      url: 'https://www.dhis2academy.org/digital-annual-conference-2021/posters/handler.php',
       data: $form.serialize(),
       success: after_form_submitted,
       dataType: 'json',
