@@ -1,6 +1,6 @@
 const emailsObj = {
   author1: 'bulama@sfhnigeria.org',
-  author2: 'petar@essi.upc.edu',
+  author2: 'oslo2023@dhis2.org',
   author3: 'vikwatokamanga@gmail.com',
   author4: 'daniel.hausenkamph@cmi.no',
   author5: 'tsegshsmart@gmail.com',
@@ -18,7 +18,7 @@ const emailsObj = {
 const titlesObj = {
   author1: `Poster-1: Effect of C4C ON Contraceptive Uptake Among Married Adolescent Girls (15-19 years) In Public Health Facilities In Kano And Jigawa States: NDHIS Retrospective Study On MMA Republication In Northern Nigeria
 Organization: Society for Family Health, Nigeria `,
-  author2: 'Poster-2: Go.Data-DHIS2 interoperability app',
+  author2: 'Testing the posters form',
   author3: 'Poster-3: Development of an harmonized monitoring and reporting system in Zambia using DHIS2',
   author4: 'Poster-4: Integratingâ€¯anti-corruption thinking in HMIS: Improving transparency and promoting equity',
   author5: 'Poster-5: How DHIS2 become cornerstone for data use?',
@@ -35,7 +35,7 @@ Organization: Society for Family Health, Nigeria `,
 
 const organizationsObj = {
   author1: 'Organization: Society for Family Health, Nigeria',
-  author2: 'Organization: Universitat PolitÃ¨cnica de Catalunya',
+  author2: 'Gassim!',
   author3: 'Organization: CIDRZ',
   author4: 'Organization: U4 Anti-corruption resource centre',
   author5: 'Organization: ',
