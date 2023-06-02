@@ -1,7 +1,7 @@
 const emailsObj = {
   author1: 'bulama@sfhnigeria.org',
-  author2: 'oslo2023@dhis2.org',
-  author3: 'vikwatokamanga@gmail.com',
+  author2: 'VDaudi@fhi360.org',
+  author3: 'etideswell@sightsavers.org',
   author4: 'daniel.hausenkamph@cmi.no',
   author5: 'tsegshsmart@gmail.com',
   author6: 'timilsina.dwas@gmail.com',
@@ -18,8 +18,8 @@ const emailsObj = {
 const titlesObj = {
   author1: `Poster-1: Effect of C4C ON Contraceptive Uptake Among Married Adolescent Girls (15-19 years) In Public Health Facilities In Kano And Jigawa States: NDHIS Retrospective Study On MMA Republication In Northern Nigeria
 Organization: Society for Family Health, Nigeria `,
-  author2: 'Testing the posters form',
-  author3: 'Poster-3: Development of an harmonized monitoring and reporting system in Zambia using DHIS2',
+  author2: `Poster-2: Use of DHIS2 tracker in peer-led programmatic mapping and validation reduces implementation time and manpower in limited resource settings: Case of six regions in Tanzania`,
+  author3: `Poster-3: The Sightsavers Journey to Integrated Data Collection with DHIS2`,
   author4: 'Poster-4: Integratingâ€¯anti-corruption thinking in HMIS: Improving transparency and promoting equity',
   author5: 'Poster-5: How DHIS2 become cornerstone for data use?',
   author6: 'Poster-6: NepalEHR and DHIS2 integration; Automation in submitting facility based digital data into National HMIS using DHIS2 platform in Nepal',
@@ -35,8 +35,8 @@ Organization: Society for Family Health, Nigeria `,
 
 const organizationsObj = {
   author1: 'Organization: Society for Family Health, Nigeria',
-  author2: 'Gassim!',
-  author3: 'Organization: CIDRZ',
+  author2: 'Organization: Epic Project - Tanzania',
+  author3: 'Organization: Sightsavers',
   author4: 'Organization: U4 Anti-corruption resource centre',
   author5: 'Organization: ',
   author6: 'Organization: Nyaya Health Nepal (NHN)',
