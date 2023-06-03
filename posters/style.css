@@ -46,6 +46,8 @@ h6 {
   color: #0e1b4d;
 }
 
+.row {display:flex; flex-wrap:wrap;}
+
 .main-page {
   margin-top: 70px;
 }
