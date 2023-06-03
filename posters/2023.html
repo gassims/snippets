@@ -9,21 +9,21 @@
   <script src="./form.js"></script>
 </head>
 <body>
-	<div id="myModal" class="modal fade" role="dialog" style="display: none;">
+	<div id="myModal" class="modal fade" role="dialog" wfd-invisible="true">
     <div class="modal-dialog">
-      
+      <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">×</button>
           <h3 class="modal-title">
             Contact Author Form
           </h3>
-          <h5><span style="color: green;" name="posterTitle" id="posterTitle">Poster-12: Validation of the Performance-based Evaluation Framework for Electronic Health Information Systems: Case of Uganda</span><br>
-            <span style="color: green;" name="posterOrganization" id="posterOrganization">Organization: Makerere University</span></h5>
+          <h5><span style="color: green;" name="posterTitle" id="posterTitle"></span><br>
+            <span style="color: green;" name="posterOrganization" id="posterOrganization"></span></h5>
         </div>
         <div class="modal-body">
           <form role="form" method="post" id="reused_form">
-            <input type="hidden" id="authorEmail" name="authorEmail" value="maggien20099@gmail.com">
+            <input type="hidden" id="authorEmail" name="authorEmail" value="" wfd-invisible="true">
             <p>Send your message in the form below.</p>
             <div class="form-group">
               <label for="name"> Name:</label>
@@ -41,10 +41,10 @@
               Submit Message →
             </button>
           </form>
-          <div id="success_message" style="width: 100%; height: 100%; display: none">
+          <div id="success_message" style="width: 100%; height: 100%; display: none" wfd-invisible="true">
             <h3>Your message was sent successfully!</h3>
           </div>
-          <div id="error_message" style="width: 100%; height: 100%; display: none">
+          <div id="error_message" style="width: 100%; height: 100%; display: none" wfd-invisible="true">
             <h3>Error</h3>
             Sorry there was an error sending your message.
           </div>
