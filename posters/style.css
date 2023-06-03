@@ -189,11 +189,7 @@ footer.footer  .dayfta_logo_img{margin-right:0px;}
     width: 2.3rem;    height: 2.3rem;
     background: #073a8a8f;    color: #7ebad3;   font-size: 1.5rem;
     display:flex;    justify-content:center;    align-items:center;   
-} #scroll-up {
-    top: calc(50% - 1.2rem);
-} #scroll-down {
-    top: calc(50% + 1.7rem);
-}
+} #scroll-up {top: calc(25% - 1.2rem);} #scroll-down {top: calc(50% + 1.7rem);}
 
 
 
