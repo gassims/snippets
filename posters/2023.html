@@ -289,7 +289,41 @@ function gotoContentSection(){
 </div>
 </footer>
 	
-	
+<!-- --------------- -->
+<button id="scroll-up" class="scroll-button">▲</button>
+<button id="scroll-down" class="scroll-button">▼</button>
+
+<script>
+    var scrollUpButton = document.querySelector('#scroll-up');
+    var scrollDownButton = document.querySelector('#scroll-down');
+    var scrollInterval;
+
+    function startScrolling(amount) {
+        scrollInterval = setInterval(function() {
+            window.scrollBy(0, amount);
+        }, 50);
+    }
+
+    function stopScrolling() {
+        clearInterval(scrollInterval);
+    }
+
+    scrollUpButton.addEventListener('mousedown', function() {
+        startScrolling(-100);
+    });
+
+    scrollUpButton.addEventListener('mouseup', stopScrolling);
+    scrollUpButton.addEventListener('mouseleave', stopScrolling);
+
+    scrollDownButton.addEventListener('mousedown', function() {
+        startScrolling(100);
+    });
+
+    scrollDownButton.addEventListener('mouseup', stopScrolling);
+    scrollDownButton.addEventListener('mouseleave', stopScrolling);
+</script>
+
+<!-- ---------------- -->	
 	
 	
 	
