@@ -6,11 +6,11 @@ const emailsObj = {
   author5: 'JLehloka@fhi360.org',
   author6: 'gmbalilaki@monitafrica.com',
   author7: 'fmumba@clintonhealthaccess.org',
-  author8: '',
-  author9: '',
-  author10: '',
-  author11: '',
-  author12: '',
+  author8: 'inyabuto@psi.org',
+  author9: 'mohsin@tattvafoundation.org',
+  author10: 'jyri@fjelltopp.org',
+  author11: 'pkkonwloh2006@gmail.com',
+  author12: 'maanivan93@gmail.com',
   author13: ''
 };
 
@@ -24,29 +24,29 @@ Organization: Society for Family Health, Nigeria `,
   author5: `Poster-5: Designed peer-led DHIS2 tracker for key population HIV services: Approaches to capacity building in system use for sustainability`,
   author6: `Poster-6: The AfyaSS Story in Tanzania`,
   author7: `Poster-7: Towards Universal Health Coverage: Improving the quality of immunization data through DHIS2 System-based Data Validation checks and Integrity Rules`,
-  author8: ``,
-  author9: ``,
-  author10: ``,
-  author11: ``,
-  author12: ``,
+  author8: `Poster-8: Positioning National HMIS for Adolescents Girls and Young Women (AGYW) Programming, Case of A360 project in Nigeria`,
+  author9: `Poster-9: DHIS2 enabled a Result-Based Financing to enhance Community Action for Health and Nutrition in Nagaland, India`,
+  author10: `Poster-10: Integrate Bite Case Management in DHIS2`,
+  author11: `Poster-11: Revolutionizing Birth and Death Registration in Liberia: Exploring the Power of DHIS2`,
+  author12: `Poster-12: Agricultural Practices and Soil Health: Experiences Dhis2 at Jabba Soil Laboratories (JSL)`,
   author13: ``
 };
 
 
 const organizationsObj = {
-  author1: 'Organization: Society for Family Health, Nigeria',
-  author2: 'Organization: Epic Project - Tanzania',
-  author3: 'Organization: Sightsavers',
+  author1: `Organization: Society for Family Health, Nigeria`,
+  author2: `Organization: Epic Project - Tanzania`,
+  author3: `Organization: Sightsavers`,
   author4: `Organization: Foundation for Innovative New Diagnostics (FIND)`,
-  author5: 'Organization: EpiC project - Lesotho',
+  author5: `Organization: EpiC project - Lesotho`,
   author6: `Organization: monitafrica`,
   author7: `Organization: Clinton Health Access Initiative (CHAI)  Zambia`,
-  author8: 'Organization: FHI 360 - BAO Systems',
-  author9: 'Organization: Castellum Digital Indonesia & University of Oslo',
-  author10: 'Organization: Castellum Digital Indonesia & University of Oslo',
-  author11: 'Organization: Castellum Digital Indonesia, University of Oslo',
-  author12: 'Organization: Makerere University',
-  author13: 'Organization: BAO Systems'
+  author8: `Organization: PSI`,
+  author9: `Organization: Tattva Foundation`,
+  author10: `Organization: Fjelltopp Ltd`,
+  author11: `Organization: Ministry of Health, Liberia, UNICEF-Liberia`,
+  author12: `Organization: Jabba Soil Laboratories`,
+  author13: ``
 };
 
  
