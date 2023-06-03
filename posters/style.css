@@ -54,7 +54,7 @@ body {
 
 .row {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin: 2px;
 }
 
