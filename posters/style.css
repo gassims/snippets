@@ -99,3 +99,85 @@ img {
     background-color:#666
     color:white
 }
+
+
+
+
+
+
+/*Footer stuff*/
+.footer {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 10vh;
+  flex-wrap: n;
+}
+footer.footer * {
+    font-size: 14px;
+    color: #000;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer.footer .footer_copyright img {
+    margin-right: 10px;
+    height: 26px!important;
+    padding: 0px 0px 0px 10px!important;
+}
+
+.footer.footer .footer_copyLeft img {
+    max-width: 140px !important;
+}
+
+
+footer.footer .dayfta_logo_img:after {
+    display: block;
+    background-image: URL("https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/e4d2e249d685bec86d45250dd7d5026d/HISP_Logo.svg?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYN_PKfLbONgJVUZsGmsyghhLV2dOW7jhpKeZdi56ptczP8iZyEpHDPIX7ibFoiIXBZzwuXR9C3brh9TnPAJeAlUQ-Cb1lCpvfexYgikZ0Da8N6-UPk2pPUBjZ0gd5C6rm");
+    width: 250px;
+    height: 65px;
+    content: "";
+    background-size: 240px 245px;
+    background-position: center;
+    clear: both;
+    left: -12px;
+    position: relative;
+}
+
+.dry-logo {
+    line-height: 40px;
+    max-width: 200px;
+}
+
+.dry-logo {
+    display: inline-block;
+}
+
+
+
+
+
+
+}
+.footer_right_social_R>div {float:left;}
+
+.footer_copyLeft{float:left; max-width:100%; width:45%; padding:20px 0px 0px;}
+
+.footer_copyright{max-width:100%;width:100%;padding:20px 0px;text-align:center;border-top:#dcdcdc 1px solid;margin-top:10px;clear: both;}
+
+.footer_copyright p{margin:0px;}
+.footer_right_social_R{float:right;padding:25px 0px 0px;}
+footer.footer .footer_copyLeft img{float:left; max-width:32px;margin-right:10px;}
+footer.footer .footer_copyright img{ margin-right:10px;height:26px!important; padding:0px 0px 0px 10px!important}
+footer.footer *{font-size:14px; color:#000;  }
+body footer.footer a:hover{color:#ccc;}
+footer.footer .dryfta_logo_title{padding-top:7px;}
+footer.footer  .dryfta_social_menu a i{  color: #d1e1f1;
+    font-size: 26px; margin: 0 3px;}
+footer.footer  .dryfta_social_menu a:hover i{color:#888;}
+
+footer.footer  .dayfta_logo_img{margin-right:0px;}
