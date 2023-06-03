@@ -51,15 +51,15 @@ const organizationsObj = {
 
  
 window.addEventListener('DOMContentLoaded', function () {
-  let boxes = document.querySelectorAll('.box');
+  let boxes = document.querySelectorAll('.content > img'); 
 
   Array.from(boxes, function (box) {
     box.addEventListener('click', function () {
       $('#myModal').modal();
 
-      const posterTitle = titlesObj[this.classList[1]];
-      const posterOrganization = organizationsObj[this.classList[1]];
-      const authorEmail = emailsObj[this.classList[1]];
+      const posterTitle = titlesObj[this.parentNode.parentNode.classList[1]];
+      const posterOrganization = organizationsObj[this.parentNode.parentNode.classList[1]];
+      const authorEmail = emailsObj[this.parentNode.parentNode.classList[1]];
 
       //populate the contents
       document.getElementById('posterTitle').innerHTML = posterTitle;
