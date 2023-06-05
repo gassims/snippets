@@ -11,7 +11,11 @@ const emailsObj = {
   author10: 'jyri@fjelltopp.org',
   author11: 'pkkonwloh2006@gmail.com',
   author12: 'maanivan93@gmail.com',
-  author13: ''
+  author13: 'steviewez@gmail.com',
+  author14: 'vshioshvili@gmail.com',
+  author15: 'abdulkarim.jaafar@qrcs.org.qa',
+  author16: 'keshab.deuba@savethechildren.org',
+  author17: 'Banga.Dennis@icf.com'
 };
 
 
@@ -29,7 +33,11 @@ Organization: Society for Family Health, Nigeria `,
   author10: `Poster-10: Integrate Bite Case Management in DHIS2`,
   author11: `Poster-11: Revolutionizing Birth and Death Registration in Liberia: Exploring the Power of DHIS2`,
   author12: `Poster-12: Agricultural Practices and Soil Health: Experiences Dhis2 at Jabba Soil Laboratories (JSL)`,
-  author13: ``
+  author13: `Poster-13: A case of using DHIS2 for poll results transmission and data analytics`,
+  author14: `Poster-14: PEPFAR Digital Health Inventory`,
+  author15: `Poster-15: Supporting Health Information System in NW Syria`,
+  author16: `Poster-16: Use of DHIS2 Tracker in Planning and Implementation of HIV Drug Resistance Surveillance at National Level: Lesson Learnt from Nepal`,
+  author17: `Poster-17: Supporting use of standardized Metadata package for TB Stool-based testing and case-based reporting`
 };
 
 
@@ -46,7 +54,11 @@ const organizationsObj = {
   author10: `Organization: Fjelltopp Ltd`,
   author11: `Organization: Ministry of Health, Liberia, UNICEF-Liberia`,
   author12: `Organization: Jabba Soil Laboratories`,
-  author13: ``
+  author13: `Organization: HISP Kenya`,
+  author14: `Organization: ICF`,
+  author15: `Organization: Qatar Red Crescent`,
+  author16: `Organization: Save the Children`,
+  author17: `Organization: ICF`,
 };
 
  
