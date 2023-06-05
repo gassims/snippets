@@ -192,4 +192,6 @@ footer.footer  .dayfta_logo_img{margin-right:0px;}
 } #scroll-up {top: calc(25% - 1.2rem);} #scroll-down {top: calc(25% + 1.7rem);}
 
 
-
+#myBtnContainer {
+    margin-top: 7rem !important;
+}
