@@ -15,7 +15,16 @@ const emailsObj = {
   author14: 'vshioshvili@gmail.com',
   author15: 'abdulkarim.jaafar@qrcs.org.qa',
   author16: 'keshab.deuba@savethechildren.org',
-  author17: 'Banga.Dennis@icf.com'
+  author17: 'Banga.Dennis@icf.com',
+  author18: 'endashawu.abera@hopewalks.org',
+  author19: 'vshioshvili@gmail.com',
+  author20: 'fhb.srilanka@gmail.com',
+  author21: 'raelmoh@gmail.com',
+  author22: 'yibeltal_tebekaw@et.jsi.com',
+  author23: 'ahordofa@ghsc-psm.org',
+  author24: 'ahordofa@ghsc-psm.org',
+  author25: 'nacho@eyeseetea.com',
+  author26: 'fhb.srilanka@gmail.com'
 };
 
 
@@ -37,7 +46,16 @@ Organization: Society for Family Health, Nigeria `,
   author14: `Poster-14: PEPFAR Digital Health Inventory`,
   author15: `Poster-15: Supporting Health Information System in NW Syria`,
   author16: `Poster-16: Use of DHIS2 Tracker in Planning and Implementation of HIV Drug Resistance Surveillance at National Level: Lesson Learnt from Nepal`,
-  author17: `Poster-17: Supporting use of standardized Metadata package for TB Stool-based testing and case-based reporting`
+  author17: `Poster-17: Supporting use of standardized Metadata package for TB Stool-based testing and case-based reporting`,
+  author18: `Poster-18: Uses of Implementing DHIS2 Tracker Capture for the National Clubfoot Program of Ethiopia`,
+  author19: `Poster-19: Supporting data exchange capacity strengthening of multinational program`,
+  author20: `Poster-20: Integrating the information systems that capture maternal and newborn health data from curative institutions with DHIS2 based electronic Reproductive Health Management Information System in the public health sector`,
+  author21: `Poster-21: DHIS2 & HEALTH EMERGENCY`,
+  author22: `Poster-22: Increasing Child Vaccination Uptake in Yemen through Pilot Mobile Notification System at the Community Level`,
+  author23: `Poster 23: Improving Supply Chain Data Visibility Using DHIS2 in Botswana`,
+  author24: `Poster-24: DHIS2 Customized to Enable Real-time Visibility of COVID-19 Vaccines Supply Chain`,
+  author25: `Poster-25: React-based Data Entry custom forms on steroids (d2-autogen-forms)`,
+  author26: `Poster-26: Geographical visualization of the availability of family planning commodities at the regional and divisional levels to facilitate efficient stock distribution and redirection in government health sector in Sri Lanka`
 };
 
 
@@ -59,6 +77,15 @@ const organizationsObj = {
   author15: `Organization: Qatar Red Crescent`,
   author16: `Organization: Save the Children`,
   author17: `Organization: ICF`,
+  author18: `Organization: HOPEWALKS`,
+  author19: `Organization: ICF`,
+  author20: `Organization: Family Health Bureau, Ministry of Health, Sri Lanka`,
+  author21: `Organization: Ministry of Health Botswana`,
+  author22: `Organization: John Snow, Inc SHARP, Yemen`,
+  author23: `Organization: Ministry of Health in Republic of Borswana, USAID`,
+  author24: `Organization: Ministry of Health, Botswana, USAID`,
+  author25: `Organization: EyeSeeTea, WHO`,
+  author26: `Organization: Family Health Bureau - Sri Lanka`,
 };
 
  
