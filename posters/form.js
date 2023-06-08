@@ -24,7 +24,18 @@ const emailsObj = {
   author23: 'ahordofa@ghsc-psm.org',
   author24: 'ahordofa@ghsc-psm.org',
   author25: 'nacho@eyeseetea.com',
-  author26: 'fhb.srilanka@gmail.com'
+  author26: 'fhb.srilanka@gmail.com',
+  author27: 'nacho@eyeseetea.com',
+  author28: 'johnlewis@hispvietnam.org',
+  author29: 'johnlewis@hispvietnam.org',
+  author30: 'senyoni@hisptanzania.org',
+  author31: 'senyoni@hisptanzania.org',
+  author32: 'bernard.mussa@gmail.com',
+  author33: 'bernard.mussa@gmail.com',
+  author34: 'bernard.mussa@gmail.com',
+  author35: 'bernard.mussa@gmail.com',
+  author36: 'bernard.mussa@gmail.com',
+  author37: 'bernard.mussa@gmail.com'
 };
 
 
@@ -55,7 +66,18 @@ Organization: Society for Family Health, Nigeria `,
   author23: `Poster 23: Improving Supply Chain Data Visibility Using DHIS2 in Botswana`,
   author24: `Poster-24: DHIS2 Customized to Enable Real-time Visibility of COVID-19 Vaccines Supply Chain`,
   author25: `Poster-25: React-based Data Entry custom forms on steroids (d2-autogen-forms)`,
-  author26: `Poster-26: Geographical visualization of the availability of family planning commodities at the regional and divisional levels to facilitate efficient stock distribution and redirection in government health sector in Sri Lanka`
+  author26: `Poster-26: Geographical visualization of the availability of family planning commodities at the regional and divisional levels to facilitate efficient stock distribution and redirection in government health sector in Sri Lanka`,
+  author27: `Poster-27: Tailoring the Data Entry Experience on Antimicrobial Resistance and Use`,
+  author28: `Poster-28: DHIS2 - Cause of Death App`,
+  author29: `Poster-29: Integration HIS platform DHIS2`,
+  author30: `Poster-30: Data to Action: DHIS2 Accelerating COVID-19 Vaccination in Tanzania`,
+  author31: `Poster-31: EAC Integrations: East Africa Community Regional Integration with National Systems`,
+  author32: `Poster-32: Implementation of the National Integrated Laboratory Information System for Enhancement of DHIS2 COVID-19 testing and Certificates Generation system in Tanzania`,
+  author33: `Poster-33: Integration of Electronic Medical Records (EMR) System and DHIS2-based Electronic Integrated Disease Surveillance and Response System (eIDSR) for Improved Disease Surveillance in Tertiary Hospitals in Tanzania`,
+  author34: `Poster-34: DHIS2 Server Capacity Building: The DHIS2 mobile administration application for managing multiple DHIS2 server instances`,
+  author35: `Poster-35: Tackling Quality of Data during HMIS Reporting. A Simplified Validation Rules Creator in DHIS2`,
+  author36: `Poster-36: Bridging the Gap between Community and Health Care Providers: Active Tuberculosis Case Finding and Treatment using Integrated National TB case-based DHIS2 mobile and Tracker System in Tanzania`,
+  author37: `Poster-37: A Flexible and Robust Electronic Event-Based Surveillance System for Reporting and Monitoring Events in Tanzania`
 };
 
 
@@ -86,6 +108,17 @@ const organizationsObj = {
   author24: `Organization: Ministry of Health, Botswana, USAID`,
   author25: `Organization: EyeSeeTea, WHO`,
   author26: `Organization: Family Health Bureau - Sri Lanka`,
+  author27: `Organization Name: EyeSeeTea`,
+  author28: `Organization: HISP Vietnam`,
+  author29: `Organization: HISP Vietnam`,
+  author30: `Organization: HISP Tanzania`,
+  author31: `Organization: HISP Tanzania`,
+  author32: `Organization: UDSM DHIS2 Lab`,
+  author33: `Organization: UDSM DHIS2 Lab`,
+  author34: `Organization: UDSM DHIS2 Lab`,
+  author35: `Organization: UDSM DHIS2 Lab`,
+  author36: `Organization: UDSM DHIS2 Lab`,
+  author37: `Organization: UDSM DHIS2 Lab`
 };
 
  
