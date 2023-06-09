@@ -36,7 +36,8 @@ const emailsObj = {
   author35: 'bernard.mussa@gmail.com',
   author36: 'bernard.mussa@gmail.com',
   author37: 'bernard.mussa@gmail.com',
-  author38: 'Matthew_Boddie@abtassoc.com'
+  author38: 'Matthew_Boddie@abtassoc.com',
+  author39: 'Kevin.Tan@mottmac.com'
 };
 
 
@@ -79,7 +80,8 @@ Organization: Society for Family Health, Nigeria `,
   author35: `Poster-35: Tackling Quality of Data during HMIS Reporting. A Simplified Validation Rules Creator in DHIS2`,
   author36: `Poster-36: Bridging the Gap between Community and Health Care Providers: Active Tuberculosis Case Finding and Treatment using Integrated National TB case-based DHIS2 mobile and Tracker System in Tanzania`,
   author37: `Poster-37: A Flexible and Robust Electronic Event-Based Surveillance System for Reporting and Monitoring Events in Tanzania`,
-  author38: `Poster-38: Automatic Synchronization between Disparate DHIS2 Versions for Simpler Roll-Back Options With Less Risk for Data Loss`
+  author38: `Poster-38: Automatic Synchronization between Disparate DHIS2 Versions for Simpler Roll-Back Options With Less Risk for Data Loss`,
+  author39: `Poster-39: Monitoring, evaluation, and reporting of antimicrobial resistance surveillance: DHIS2 application and intended use in a large-scale development programme`
 };
 
 
@@ -121,7 +123,8 @@ const organizationsObj = {
   author35: `Organization: UDSM DHIS2 Lab`,
   author36: `Organization: UDSM DHIS2 Lab`,
   author37: `Organization: UDSM DHIS2 Lab`,
-  author38: `Organization: PMI Evolve`
+  author38: `Organization: PMI Evolve`,
+  author39: `Organization: Fleming Fund, Mott MacDonald`,
 };
 
  
