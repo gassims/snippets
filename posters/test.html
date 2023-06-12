@@ -1,127 +1,124 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <style>
-    .bazaarGallery {
-      display: flex;
-      overflow-x: scroll;
-    }
-
-    .bazaarGallery a {
-      display: flex;
-      flex: 0 0 150px;
-      height: 150px;
-      margin: 5px
-    }
-
-    .bazaarGallery img {
-      width: 100%;
-      height: 100%;
-    }
-
-    .selected-bazaarImage {
-      display: none;
-      margin-top: 20px;
-      text-align: center;
-    }
-
-    .selected-bazaarImage img {
-      width: 100%;
-      height: auto;
-    }
-
-    :targetBazaarImage {
-      display: block !important;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="bazaarGallery" style="display: flex; overflow-x: auto;">
-    <a href="#image1" style="flex: 0 0 150px; height: 150px; margin: 5px;">
-      <img
-        style="width: 100%; height: 100%;"
-        src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/cc90ec6373401007449d5420ec917ea1/DE_poster.png?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYG9fFsx5GOZmw0inJIgN9a_OgT0yaRLWW8MTeAXlniXE28drS2IkxaRKBgBZ1SFTF48k_sqHOycoxsfjNXe0TaikYQlC1TPC14KuaEBuQgP8Phn1QEB5zYDhOOI18WoI_"
-        alt="Image 1" />
-    </a>
-    <a href="#image2" style="flex: 0 0 150px; height: 150px; margin: 5px;">
-      <img
-        style="width: 100%; height: 100%;"
-        src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/c5a6f0eefd016003cf987d76db680c78/IDDS_Standardized_Metadata_package_for_TB_Stool_based_testing_and_case_based_reporting_DHIS2_Conference_2023.png?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYaDmBIJn8D8qej9BGedR-Fnwq0We5QOhUY3JCWMZnvD82BOOYOLBJ3fkfb2Zj24ByTvlI_v9_q82k_0j4hjXRw3-0cvFnCxLFBl3zI4lhHIWpr_H460hzE50yJWV0ARnXXgCzvZNTMfKxgmkO3IdL-2vaPNN8ijYeFoQkFrnpcKiYw3ftwg3BqPtpmeIUzTGjs8WlXSE_q1wK6bLy-GO36VZvDO2dosz6NGAEag7C8bfaUthMk1ns0PANQfVlgBew"
-        alt="Image 2" />
-    </a>
-    <a href="#image3" style="flex: 0 0 150px; height: 150px; margin: 5px;">
-      <img
-        style="width: 100%; height: 100%;"
-        src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/11917c58574dcd37802daef8594173fe/poster_14.jpg?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYK_3uhlBij7PWLi9N9rPgBa15i2tIBT6txnujerWTu5mj1A0DDf4EVU5yOQafcBBbISVL3U1aPMccPEUs4cP3Oz_R9j9eCoVhThOhSuKM9anydEIocPipSZ3x0du3g_mm"
-        alt="Image 3" />
-    </a>
-    <a href="#image4" style="flex: 0 0 150px; height: 150px; margin: 5px;">
-      <img
-        style="width: 100%; height: 100%;"
-        src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/a742445850400397452b7632b3f7717a/WHOCOD_poster_V1.png?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYrL7NuiMI1G26vzNV-_K8WiHCN-43FChIkxmAPsgiOto4Yopmp1ls4zqssAU-PnWgR0yNk8lD93VMA-s97allu8h6qQ9tbi4rFWFsaDm_vTIg0IZ0QLrogVfFnMS1RStU"
-        alt="Image 4" />
-    </a>
-    <a href="#image5" style="flex: 0 0 150px; height: 150px; margin: 5px;">
-      <img
-        style="width: 100%; height: 100%;"
-        src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/6e2ac64fff7f1a555734e260f6e75555/From_Data_to_Action__1___3_.png?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYRqU9hVEWYMIHUXgy52G7w7cmwJHyjVfKopn7-H9OWTrRYF6a8baRdtLSerrpWqLNgXcPYqp6PBNlkTMKy9Ptp_ZDLwXy_6OnWakRZqgbEbOEah9VQVPD4lw6oZGfSS3gz_LKPvSLO4LQo8J4oqqpzw=="
-        alt="Image 5" />
-    </a>
-    <a href="#image6" style="flex: 0 0 150px; height: 150px; margin: 5px;">
-      <img
-        style="width: 100%; height: 100%;"
-        src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/1f30e178b4bb59a064e3da7e15fe123e/EAC_integrations__2_.png?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYn-NFRFmYVoHljRSmDkMzCKUSg3kNPf7nGklPT6SPMcDVRbU6T5tthQZ4nYF9VZh--adfR7eMcWSM3RXBMQwxdTC17Tc7olfpqN1jDUWfsZc43Bkx2o_yzAjXqxw84BuY"
-        alt="Image 6" />
-    </a>
-    <a href="#image7" style="flex: 0 0 150px; height: 150px; margin: 5px;">
-      <img
-        style="width: 100%; height: 100%;"
-        src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/2df424a400605fd2e05864f4401fa764/DHIS2_FF_conference_banner_050623v2.png?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYYQbt71MWksW6bN6x_zJGLKsBRsT8xWnWwP4NoIH8kk996roctENaKMVvuqpd-To9q9Def-XnPAjqWVpdT6uJeYn9H9T9weicQA8F_DKrTJT8eq1ukhMQKXWoiP_Rae8yaf1b1uEZJpDkx88XFUgWCQ=="
-        alt="Image 7" />
-    </a>
-  </div>
-  <div id="image1" class="selected-bazaarImage" style="display: none; margin-top: 20px; text-align: center;">
-    <img
-      src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/cc90ec6373401007449d5420ec917ea1/DE_poster.png?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYG9fFsx5GOZmw0inJIgN9a_OgT0yaRLWW8MTeAXlniXE28drS2IkxaRKBgBZ1SFTF48k_sqHOycoxsfjNXe0TaikYQlC1TPC14KuaEBuQgP8Phn1QEB5zYDhOOI18WoI_"
-      alt="Image 1" style="width: 300px; height: 300px;"/>
-  </div>
-  <div id="image2" class="selected-bazaarImage" style="display: none; margin-top: 20px; text-align: center;">
-    <img
-      src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/c5a6f0eefd016003cf987d76db680c78/IDDS_Standardized_Metadata_package_for_TB_Stool_based_testing_and_case_based_reporting_DHIS2_Conference_2023.png?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYaDmBIJn8D8qej9BGedR-Fnwq0We5QOhUY3JCWMZnvD82BOOYOLBJ3fkfb2Zj24ByTvlI_v9_q82k_0j4hjXRw3-0cvFnCxLFBl3zI4lhHIWpr_H460hzE50yJWV0ARnXXgCzvZNTMfKxgmkO3IdL-2vaPNN8ijYeFoQkFrnpcKiYw3ftwg3BqPtpmeIUzTGjs8WlXSE_q1wK6bLy-GO36VZvDO2dosz6NGAEag7C8bfaUthMk1ns0PANQfVlgBew"
-      alt="Image 2" style="width: 300px; height: 300px;"/>
-  </div>
-  <div id="image3" class="selected-bazaarImage" style="display: none; margin-top: 20px; text-align: center;">
-    <img
-      src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/11917c58574dcd37802daef8594173fe/poster_14.jpg?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYK_3uhlBij7PWLi9N9rPgBa15i2tIBT6txnujerWTu5mj1A0DDf4EVU5yOQafcBBbISVL3U1aPMccPEUs4cP3Oz_R9j9eCoVhThOhSuKM9anydEIocPipSZ3x0du3g_mm"
-      alt="Image 3" style="width: 300px; height: 300px;"/>
-  </div>
-  <div id="image4" class="selected-bazaarImage" style="display: none; margin-top: 20px; text-align: center;">
-    <img
-      src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/a742445850400397452b7632b3f7717a/WHOCOD_poster_V1.png?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYrL7NuiMI1G26vzNV-_K8WiHCN-43FChIkxmAPsgiOto4Yopmp1ls4zqssAU-PnWgR0yNk8lD93VMA-s97allu8h6qQ9tbi4rFWFsaDm_vTIg0IZ0QLrogVfFnMS1RStU"
-      alt="Image 4" style="width: 300px; height: 300px;"/>
-  </div>
-  <div id="image5" class="selected-bazaarImage" style="display: none; margin-top: 20px; text-align: center;">
-    <img
-      src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/6e2ac64fff7f1a555734e260f6e75555/From_Data_to_Action__1___3_.png?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYRqU9hVEWYMIHUXgy52G7w7cmwJHyjVfKopn7-H9OWTrRYF6a8baRdtLSerrpWqLNgXcPYqp6PBNlkTMKy9Ptp_ZDLwXy_6OnWakRZqgbEbOEah9VQVPD4lw6oZGfSS3gz_LKPvSLO4LQo8J4oqqpzw=="
-      alt="Image 5" style="width: 300px; height: 300px;"/>
-  </div>
-  <div id="image6" class="selected-bazaarImage" style="display: none; margin-top: 20px; text-align: center;">
-    <img
-      src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/1f30e178b4bb59a064e3da7e15fe123e/EAC_integrations__2_.png?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYn-NFRFmYVoHljRSmDkMzCKUSg3kNPf7nGklPT6SPMcDVRbU6T5tthQZ4nYF9VZh--adfR7eMcWSM3RXBMQwxdTC17Tc7olfpqN1jDUWfsZc43Bkx2o_yzAjXqxw84BuY"
-      alt="Image 6" style="width: 300px; height: 300px;"/>
-  </div>
-  <div id="image7" class="selected-bazaarImage" style="display: none; margin-top: 20px; text-align: center;">
-    <img
-      src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/2df424a400605fd2e05864f4401fa764/DHIS2_FF_conference_banner_050623v2.png?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYYQbt71MWksW6bN6x_zJGLKsBRsT8xWnWwP4NoIH8kk996roctENaKMVvuqpd-To9q9Def-XnPAjqWVpdT6uJeYn9H9T9weicQA8F_DKrTJT8eq1ukhMQKXWoiP_Rae8yaf1b1uEZJpDkx88XFUgWCQ=="
-      alt="Image 7" style="width: 300px; height: 300px;"/>
-  </div>
-  <style>
-    :targetBazaarImage {
-      display: block !important;
-    }
-  </style>
-</body>
-
+  <head>
+    <style>
+      .gallery {
+        display: flex;
+        overflow-x: scroll;
+      }
+      .gallery a {
+        display: flex;
+        flex: 0 0 150px;
+        height: 150px;
+        margin: 5px
+      }
+      .gallery img {
+        width: 100%;
+        height: 100%;
+      }
+      .selected-image {
+        display: none;
+        margin-top: 20px;
+        text-align: center;
+      }
+      .selected-image img {
+        width: 100%;
+        height: auto;
+      }
+      :target.selected-image {
+        display: block !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <a href="#image1" >
+        <img src="image1.jpg" alt="Image 1" />
+      </a>
+      <a href="#image2" >
+        <img src="image2.jpg" alt="Image 2" />
+      </a>
+      <a href="#image3" >
+        <img src="image3.jpg" alt="Image 3" />
+      </a>
+      <a href="#image4" >
+        <img src="image1.jpg" alt="Image 1" />
+      </a>
+      <a href="#image5" >
+        <img src="image2.jpg" alt="Image 2" />
+      </a>
+      <a href="#image6" >
+        <img src="image3.jpg" alt="Image 3" />
+      </a>
+      <a href="#image7" >
+        <img src="image1.jpg" alt="Image 1" />
+      </a>
+      <a href="#image8" >
+        <img src="image2.jpg" alt="Image 2" />
+      </a>
+      <a href="#image9" >
+        <img src="image3.jpg" alt="Image 3" />
+      </a>
+      <a href="#image10" >
+        <img src="image1.jpg" alt="Image 1" />
+      </a>
+      <a href="#image11" >
+        <img src="image2.jpg" alt="Image 2" />
+      </a>
+      <a href="#image12" >
+        <img src="image3.jpg" alt="Image 3" />
+      </a>
+      <a href="#image13" >
+        <img src="image1.jpg" alt="Image 1" />
+      </a>
+      <a href="#image14" >
+        <img src="image2.jpg" alt="Image 2" />
+      </a>
+      <a href="#image15" >
+        <img src="image3.jpg" alt="Image 3" />
+      </a>
+    </div>
+    <div id="image1" class="selected-image">
+      <img src="image1.jpg" alt="Image 1" />
+    </div>
+    <div id="image2" class="selected-image">
+      <img src="image2.jpg" alt="Image 2" />
+    </div>
+    <div id="image3" class="selected-image">
+      <img src="image3.jpg" alt="Image 3" />
+    </div>
+    <div id="image4" class="selected-image">
+      <img src="image1.jpg" alt="Image 1" />
+    </div>
+    <div id="image5" class="selected-image">
+      <img src="image2.jpg" alt="Image 2" />
+    </div>
+    <div id="image6" class="selected-image">
+      <img src="image3.jpg" alt="Image 3" />
+    </div>
+    <div id="image7" class="selected-image">
+      <img src="image1.jpg" alt="Image 1" />
+    </div>
+    <div id="image8" class="selected-image">
+      <img src="image2.jpg" alt="Image 2" />
+    </div>
+    <div id="image9" class="selected-image">
+      <img src="image3.jpg" alt="Image 3" />
+    </div>
+    <div id="image10" class="selected-image">
+      <img src="image1.jpg" alt="Image 1" />
+    </div>
+    <div id="image12" class="selected-image">
+      <img src="image2.jpg" alt="Image 2" />
+    </div>
+    <div id="image13" class="selected-image">
+      <img src="image3.jpg" alt="Image 3" />
+    </div>
+    <div id="image14" class="selected-image">
+      <img src="image3.jpg" alt="Image 3" />
+    </div>
+    <div id="image15" class="selected-image">
+      <img src="image3.jpg" alt="Image 3" />
+    </div>
+  </body>
 </html>
