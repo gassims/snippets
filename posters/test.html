@@ -4,8 +4,7 @@
     <style>
       .gallery {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        overflow-x: auto;
       }
       .gallery a {
         display: block;
@@ -20,6 +19,7 @@
       .selected-image {
         display: none;
         margin-top: 20px;
+        text-align: center;
       }
       .selected-image img {
         width: 300px;
@@ -32,24 +32,24 @@
   </head>
   <body>
     <div class="gallery">
-      <a href="#image1">
-        <img src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/2df424a400605fd2e05864f4401fa764/DHIS2_FF_conference_banner_050623v2.png?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYYQbt71MWksW6bN6x_zJGLKsBRsT8xWnWwP4NoIH8kk996roctENaKMVvuqpd-To9q9Def-XnPAjqWVpdT6uJeYn9H9T9weicQA8F_DKrTJT8eq1ukhMQKXWoiP_Rae8yaf1b1uEZJpDkx88XFUgWCQ==" alt="Image 1" />
+      <a href="#image1" style="background:red">
+        <img src="image1.jpg" alt="Image 1" />
       </a>
-      <a href="#image2">
-        <img src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/46f1f0149581734257a5351d05ed7894/Boddie_DHISposter_78x33_0608.png?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mY20LSz5zDlHVC70ryNmdsgzZJagcAkiuI0A7_ldy87OsQZ3j6CgT0aDNLTD2wWydozF2Gi2u0qJSm2G-lp2MJL71m1U35lzPY58ycXieIiJXSo-WqPqvfN6B0J5zMm1n4hFOC9Hg2tRJwqbr9YoQOjw==" alt="Image 2" />
+      <a href="#image2" style="background:green"></a>
+        <img src="image2.jpg" alt="Image 2" />
       </a>
-      <a href="#image3">
-        <img src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/e1892e1a4d2d27228faa0fabe36e4de2/A_Flexible_and_Robust_Electronic_Event_Based_Surveillance_System_for_Reporting_and_Monitoring_Events_in_Tanzania_Poster_FINAL__1_.png?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYvUQuht7Np7llK9oX30P41bMVe9OXM-vtqh5a5-ZqamMg4bqLkJtKplQ25-hBp-8IaYGuDl-lby66DfKroBYxTKv0bRSiOq3TI0hwifQ23PxTHejOnDnL-S5YQ9w9jeIJ7cqbuVu9XlavvElgGi8DAIp4F9awSfdIQt9I9GiunX9uv9QQ9AkxrMYHOaOEIkqA6xCesk9X5uZ4Wly11GfL7XS7DEa03h7bt0EKB2qzvPcywcjM3eePlkfaXK8zeWbhcS_8zpu60AVa3Q3dcbZ4wA==" alt="Image 3" />
+      <a href="#image3" style="background:blue"></a>
+        <img src="image3.jpg" alt="Image 3" />
       </a>
     </div>
     <div id="image1" class="selected-image">
-      <img src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/2df424a400605fd2e05864f4401fa764/DHIS2_FF_conference_banner_050623v2.png?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYYQbt71MWksW6bN6x_zJGLKsBRsT8xWnWwP4NoIH8kk996roctENaKMVvuqpd-To9q9Def-XnPAjqWVpdT6uJeYn9H9T9weicQA8F_DKrTJT8eq1ukhMQKXWoiP_Rae8yaf1b1uEZJpDkx88XFUgWCQ==" alt="Image 1" />
+      <img src="image1.jpg" alt="Image 1" />
     </div>
     <div id="image2" class="selected-image">
-      <img src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/46f1f0149581734257a5351d05ed7894/Boddie_DHISposter_78x33_0608.png?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mY20LSz5zDlHVC70ryNmdsgzZJagcAkiuI0A7_ldy87OsQZ3j6CgT0aDNLTD2wWydozF2Gi2u0qJSm2G-lp2MJL71m1U35lzPY58ycXieIiJXSo-WqPqvfN6B0J5zMm1n4hFOC9Hg2tRJwqbr9YoQOjw==" alt="Image 2" />
+      <img src="image2.jpg" alt="Image 2" />
     </div>
     <div id="image3" class="selected-image">
-      <img src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/e1892e1a4d2d27228faa0fabe36e4de2/A_Flexible_and_Robust_Electronic_Event_Based_Surveillance_System_for_Reporting_and_Monitoring_Events_in_Tanzania_Poster_FINAL__1_.png?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYvUQuht7Np7llK9oX30P41bMVe9OXM-vtqh5a5-ZqamMg4bqLkJtKplQ25-hBp-8IaYGuDl-lby66DfKroBYxTKv0bRSiOq3TI0hwifQ23PxTHejOnDnL-S5YQ9w9jeIJ7cqbuVu9XlavvElgGi8DAIp4F9awSfdIQt9I9GiunX9uv9QQ9AkxrMYHOaOEIkqA6xCesk9X5uZ4Wly11GfL7XS7DEa03h7bt0EKB2qzvPcywcjM3eePlkfaXK8zeWbhcS_8zpu60AVa3Q3dcbZ4wA==" alt="Image 3" />
+      <img src="image3.jpg" alt="Image 3" />
     </div>
   </body>
 </html>
