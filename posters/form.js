@@ -37,7 +37,13 @@ const emailsObj = {
   author36: 'bernard.mussa@gmail.com',
   author37: 'bernard.mussa@gmail.com',
   author38: 'Matthew_Boddie@abtassoc.com',
-  author39: 'Kevin.Tan@mottmac.com'
+  author39: 'Kevin.Tan@mottmac.com',
+  author40: 'apreston@rti.org',
+  author41: 'matthewmvula1@gmail.com',
+  author42: 'asorgi@msh.org',
+  author43: 'fhb.srilanka@gmail.com',
+  author44: 'gregorio.rodrigues@3778.care',
+  author45: 'rajarahim@castellumdigital.id'
 };
 
 
@@ -81,7 +87,13 @@ Organization: Society for Family Health, Nigeria `,
   author36: `Poster-36: Bridging the Gap between Community and Health Care Providers: Active Tuberculosis Case Finding and Treatment using Integrated National TB case-based DHIS2 mobile and Tracker System in Tanzania`,
   author37: `Poster-37: A Flexible and Robust Electronic Event-Based Surveillance System for Reporting and Monitoring Events in Tanzania`,
   author38: `Poster-38: Automatic Synchronization between Disparate DHIS2 Versions for Simpler Roll-Back Options With Less Risk for Data Loss`,
-  author39: `Poster-39: Monitoring, evaluation, and reporting of antimicrobial resistance surveillance: DHIS2 application and intended use in a large-scale development programme`
+  author39: `Poster-39: Monitoring, evaluation, and reporting of antimicrobial resistance surveillance: DHIS2 application and intended use in a large-scale development programme`,
+  author40: `Poster-40: Standardizing Logistics Management Data Collection`,
+  author41: `Poster-41: Integration of Electronic Medical Records Data Into One Health Surveillance Platform Automate Facility Disease Surveillance Reporting in Malawi`,
+  author42: `Poster-42: Interoperability of DHIS2 instances using Python and DHIS2 event capture app`,
+  author43: `Poster-43: Nutrition Assistance Programme [NAP] android application: Tracking under 5 years children with the Severe Acute Malnutrition in Sri Lanka during the economic crisis`,
+  author44: `Poster-44: DHIS2 Implementation Experience for Primary Care Service for Corporate Health in Brazil`,
+  author45: `Poster-45: DHIS2 To FHIR Application Enabling Interoperability Mechanism in Jumpadokter`
 };
 
 
@@ -125,6 +137,12 @@ const organizationsObj = {
   author37: `Organization: UDSM DHIS2 Lab`,
   author38: `Organization: PMI Evolve`,
   author39: `Organization: Fleming Fund, Mott MacDonald`,
+  author40: `Organization: CHISU USAID program, HAITI Ministry of Health`,
+  author41: `Organization: PHIM`,
+  author42: `Organization: msh`,
+  author43: `Organization: Family Health Bureau, Ministry of Health, Srilanka`,
+  author44: `Organization: 3778.care`,
+  author45: `Organization: Jumpadockter, HISP ID`
 };
 
  
