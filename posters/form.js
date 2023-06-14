@@ -43,13 +43,15 @@ const emailsObj = {
   author42: 'asorgi@msh.org',
   author43: 'fhb.srilanka@gmail.com',
   author44: 'gregorio.rodrigues@3778.care',
-  author45: 'rajarahim@castellumdigital.id'
+  author45: 'rajarahim@castellumdigital.id',
+  author46: 'lnunez@psi.org',
+  author46: 'lnunez@psi.org',
+  author46: 'lnunez@psi.org'
 };
 
 
 const titlesObj = {
-  author1: `Poster-1: Effect of C4C ON Contraceptive Uptake Among Married Adolescent Girls (15-19 years) In Public Health Facilities In Kano And Jigawa States: NDHIS Retrospective Study On MMA Republication In Northern Nigeria
-Organization: Society for Family Health, Nigeria `,
+  author1: `Poster-1: Effect of C4C ON Contraceptive Uptake Among Married Adolescent Girls (15-19 years) In Public Health Facilities In Kano And Jigawa States: NDHIS Retrospective Study On MMA Republication In Northern Nigeria`,
   author2: `Poster-2: Use of DHIS2 tracker in peer-led programmatic mapping and validation reduces implementation time and manpower in limited resource settings: Case of six regions in Tanzania`,
   author3: `Poster-3: The Sightsavers Journey to Integrated Data Collection with DHIS2`,
   author4: `Poster-4: Barriers to Effective Implementation of DHIS2 for Surveillance in Limited Resource Healthcare Settings: A Case of Nepal`,
@@ -93,7 +95,10 @@ Organization: Society for Family Health, Nigeria `,
   author42: `Poster-42: Interoperability of DHIS2 instances using Python and DHIS2 event capture app`,
   author43: `Poster-43: Nutrition Assistance Programme [NAP] android application: Tracking under 5 years children with the Severe Acute Malnutrition in Sri Lanka during the economic crisis`,
   author44: `Poster-44: DHIS2 Implementation Experience for Primary Care Service for Corporate Health in Brazil`,
-  author45: `Poster-45: DHIS2 To FHIR Application Enabling Interoperability Mechanism in Jumpadokter`
+  author45: `Poster-45: DHIS2 To FHIR Application Enabling Interoperability Mechanism in Jumpadokter`,
+  author46: `Poster-46: Capacity strengthening system admins on a DHIS2 based quality improvement app through a multi-pronged traning approach`,
+  author47: `Poster-47: Lessons learned from transitioning digital systems for quality improvement of healthcare services from a private international NGO to government and local stakeholders`,
+  author48: `Poster-48: Boosting a quality improvement approach for malaria service delivery through a DHIS2-based Android application`
 };
 
 
@@ -142,7 +147,10 @@ const organizationsObj = {
   author42: `Organization: msh`,
   author43: `Organization: Family Health Bureau, Ministry of Health, Srilanka`,
   author44: `Organization: 3778.care`,
-  author45: `Organization: Jumpadockter, HISP ID`
+  author45: `Organization: Jumpadockter, HISP ID`,
+  author46: `Organization: PSI`,
+  author47: `Organization: PSI`,
+  author48: `Organization: PSI`
 };
 
  
