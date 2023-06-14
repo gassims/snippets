@@ -124,7 +124,7 @@ const organizationsObj = {
   author24: `Organization: Ministry of Health, Botswana, USAID`,
   author25: `Organization: EyeSeeTea, WHO`,
   author26: `Organization: Family Health Bureau - Sri Lanka`,
-  author27: `Organization Name: EyeSeeTea`,
+  author27: `Organization Name: EyeSeeTea and WHO`,
   author28: `Organization: HISP Vietnam`,
   author29: `Organization: HISP Vietnam`,
   author30: `Organization: HISP Tanzania`,
