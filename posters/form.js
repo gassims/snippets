@@ -45,8 +45,9 @@ const emailsObj = {
   author44: 'gregorio.rodrigues@3778.care',
   author45: 'rajarahim@castellumdigital.id',
   author46: 'lnunez@psi.org',
-  author46: 'lnunez@psi.org',
-  author46: 'lnunez@psi.org'
+  author47: 'lnunez@psi.org',
+  author48: 'lnunez@psi.org',
+  author49: `jyri@fjelltopp.org`
 };
 
 
@@ -98,7 +99,8 @@ const titlesObj = {
   author45: `Poster-45: DHIS2 To FHIR Application Enabling Interoperability Mechanism in Jumpadokter`,
   author46: `Poster-46: Capacity strengthening system admins on a DHIS2 based quality improvement app through a multi-pronged traning approach`,
   author47: `Poster-47: Lessons learned from transitioning digital systems for quality improvement of healthcare services from a private international NGO to government and local stakeholders`,
-  author48: `Poster-48: Boosting a quality improvement approach for malaria service delivery through a DHIS2-based Android application`
+  author48: `Poster-48: Boosting a quality improvement approach for malaria service delivery through a DHIS2-based Android application`,
+  author49: `Poster-49: Integrated Bite Case Management in DHIS2`
 };
 
 
@@ -150,7 +152,8 @@ const organizationsObj = {
   author45: `Organization: Jumpadockter, HISP ID`,
   author46: `Organization: PSI`,
   author47: `Organization: PSI`,
-  author48: `Organization: PSI`
+  author48: `Organization: PSI`,
+  author49: `Organization: Fjelltopp`
 };
 
  
