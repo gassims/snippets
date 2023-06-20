@@ -10,6 +10,16 @@ img {
   vertical-align: middle;
 }
 
+.fadeOut {
+  animation: fadeOut 0.5s;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
@@ -201,7 +211,10 @@ function currentSlide(n) {
     // create close button
     const closeButton = document.createElement('button');
     closeButton.textContent = 'Close';
-    closeButton.onclick = () => popup.remove();
+    closeButton.onclick = () => {
+        img.classList.add('fadeOut');
+        setTimeout(() => popup.remove(), 500);
+    };
     closeButton.style.position = 'absolute';
     closeButton.style.top = '20px';
     closeButton.style.right = '20px';
@@ -214,8 +227,11 @@ function currentSlide(n) {
         if (nextSlideIndex > images.length) {
             nextSlideIndex = 1;
         }
-        popup.remove();
-        currentSlide(nextSlideIndex);
+        img.classList.add('fadeOut');
+        setTimeout(() => {
+            popup.remove();
+            currentSlide(nextSlideIndex);
+        }, 500);
     };
     nextButton.style.position = 'absolute';
     nextButton.style.top = '50%';
@@ -229,8 +245,11 @@ function currentSlide(n) {
         if (prevSlideIndex < 1) {
             prevSlideIndex = images.length;
         }
-        popup.remove();
-        currentSlide(prevSlideIndex);
+        img.classList.add('fadeOut');
+        setTimeout(() => {
+            popup.remove();
+            currentSlide(prevSlideIndex);
+        }, 500);
     };
     prevButton.style.position = 'absolute';
     prevButton.style.top = '50%';
@@ -251,6 +270,7 @@ function currentSlide(n) {
     // append popup to body
     document.body.appendChild(popup);
 }
+
 
 
 
