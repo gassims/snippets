@@ -196,7 +196,7 @@ function plusSlides(n) {
 } */
 
 function currentSlide(n) {
-    // create popup element
+    
     const popup = document.createElement('div');
     popup.style.position = 'fixed';
     popup.style.top = '0';
@@ -208,7 +208,7 @@ function currentSlide(n) {
     popup.style.alignItems = 'center';
     popup.style.justifyContent = 'center';
 
-    // create close button
+    
     const closeButton = document.createElement('button');
     closeButton.textContent = 'Close';
     closeButton.onclick = () => {
@@ -219,7 +219,7 @@ function currentSlide(n) {
     closeButton.style.top = '20px';
     closeButton.style.right = '20px';
 
-    // create next button
+    
     const nextButton = document.createElement('button');
     nextButton.textContent = '❯';
     nextButton.onclick = () => {
@@ -237,7 +237,7 @@ function currentSlide(n) {
     nextButton.style.top = '50%';
     nextButton.style.right = '20px';
 
-    // create prev button
+    
     const prevButton = document.createElement('button');
     prevButton.textContent = '❮';
     prevButton.onclick = () => {
@@ -255,21 +255,34 @@ function currentSlide(n) {
     prevButton.style.top = '50%';
     prevButton.style.left = '20px';
 
-    // create image element
+    
     const img = document.createElement('img');
     img.src = images[n - 1];
     img.style.maxWidth = '90%';
     img.style.maxHeight = '90%';
 
-    // append elements to popup
-    popup.appendChild(closeButton);
-    popup.appendChild(nextButton);
-    popup.appendChild(prevButton);
-    popup.appendChild(img);
+    
+    const iconUrl = 'https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/d878bfe66f1b00728db7596401b4bbb1/lOGO.png?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYbmWzqkoacubWy45n90vdil12AHsfL8VSqjTve8VmsW2sP7iuCHpOXPLtnPtj6JJL6gNVuyxEbRGgfKgGbuRtFEj74u6B18YjjSgH0Dd7Nss='; // add your icon URL here
+    const iconOpacity = 0.5;
 
-    // append popup to body
-    document.body.appendChild(popup);
+    const iconImg = document.createElement('img');
+    iconImg.src = iconUrl;
+    iconImg.style.opacity = iconOpacity;
+
+    const iconContainer = document.createElement('div');
+    iconContainer.appendChild(iconImg);
+    
+     
+     popup.appendChild(closeButton);
+     popup.appendChild(nextButton);
+     popup.appendChild(prevButton);
+     popup.appendChild(img);
+     popup.appendChild(iconContainer);
+
+     
+     document.body.appendChild(popup);
 }
+
 
 
 
