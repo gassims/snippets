@@ -210,6 +210,10 @@ function currentSlide(n) {
     const nextButton = document.createElement('button');
     nextButton.textContent = '❯';
     nextButton.onclick = () => {
+        let nextSlideIndex = n + 1;
+        if (nextSlideIndex > images.length) {
+            nextSlideIndex = 1;
+        }
         popup.remove();
         currentSlide(n + 1);
     };
@@ -220,7 +224,11 @@ function currentSlide(n) {
     // create prev button
     const prevButton = document.createElement('button');
     prevButton.textContent = '❮';
-    prevButton.onclick = () => {
+     prevButton.onclick = () => {
+        let prevSlideIndex = n - 1;
+        if (prevSlideIndex < 1) {
+            prevSlideIndex = images.length;
+        }
         popup.remove();
         currentSlide(n - 1);
     };
