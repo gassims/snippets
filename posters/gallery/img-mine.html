@@ -186,6 +186,7 @@ function plusSlides(n) {
 } */
 
 function currentSlide(n) {
+    // create popup element
     const popup = document.createElement('div');
     popup.style.position = 'fixed';
     popup.style.top = '0';
@@ -197,7 +198,7 @@ function currentSlide(n) {
     popup.style.alignItems = 'center';
     popup.style.justifyContent = 'center';
 
-
+    // create close button
     const closeButton = document.createElement('button');
     closeButton.textContent = 'Close';
     closeButton.onclick = () => popup.remove();
@@ -205,15 +206,41 @@ function currentSlide(n) {
     closeButton.style.top = '20px';
     closeButton.style.right = '20px';
 
+    // create next button
+    const nextButton = document.createElement('button');
+    nextButton.textContent = '❯';
+    nextButton.onclick = () => {
+        popup.remove();
+        currentSlide(n + 1);
+    };
+    nextButton.style.position = 'absolute';
+    nextButton.style.top = '50%';
+    nextButton.style.right = '20px';
 
+    // create prev button
+    const prevButton = document.createElement('button');
+    prevButton.textContent = '❮';
+    prevButton.onclick = () => {
+        popup.remove();
+        currentSlide(n - 1);
+    };
+    prevButton.style.position = 'absolute';
+    prevButton.style.top = '50%';
+    prevButton.style.left = '20px';
+
+    // create image element
     const img = document.createElement('img');
     img.src = images[n - 1];
     img.style.maxWidth = '90%';
     img.style.maxHeight = '90%';
 
+    // append elements to popup
     popup.appendChild(closeButton);
+    popup.appendChild(nextButton);
+    popup.appendChild(prevButton);
     popup.appendChild(img);
 
+    // append popup to body
     document.body.appendChild(popup);
 }
 
