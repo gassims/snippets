@@ -196,6 +196,97 @@ function plusSlides(n) {
 } */
 
 function currentSlide(n) {
+    // create popup element
+    const popup = document.createElement('div');
+    popup.style.position = 'fixed';
+    popup.style.top = '0';
+    popup.style.left = '0';
+    popup.style.width = '100%';
+    popup.style.height = '100%';
+    popup.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+    popup.style.display = 'flex';
+    popup.style.alignItems = 'center';
+    popup.style.justifyContent = 'center';
+
+    // create close button
+    const closeButton = document.createElement('button');
+    closeButton.textContent = 'Close';
+    closeButton.onclick = () => {
+        img.classList.add('fadeOut');
+        iconContainer.classList.add('fadeIn');
+        setTimeout(() => popup.remove(), 500);
+    };
+    closeButton.style.position = 'absolute';
+    closeButton.style.top = '20px';
+    closeButton.style.right = '20px';
+
+    // create next button
+    const nextButton = document.createElement('button');
+    nextButton.textContent = '❯';
+    nextButton.onclick = () => {
+        let nextSlideIndex = n + 1;
+        if (nextSlideIndex > images.length) {
+            nextSlideIndex = 1;
+        }
+        img.classList.add('fadeOut');
+        iconContainer.classList.add('fadeIn');
+        setTimeout(() => {
+            popup.remove();
+            currentSlide(nextSlideIndex);
+        }, 500);
+    };
+    nextButton.style.position = 'absolute';
+    nextButton.style.top = '50%';
+    nextButton.style.right = '20px';
+
+    // create prev button
+    const prevButton = document.createElement('button');
+    prevButton.textContent = '❮';
+    prevButton.onclick = () => {
+        let prevSlideIndex = n - 1;
+        if (prevSlideIndex < 1) {
+            prevSlideIndex = images.length;
+        }
+        img.classList.add('fadeOut');
+        iconContainer.classList.add('fadeIn');
+        setTimeout(() => {
+            popup.remove();
+            currentSlide(prevSlideIndex);
+        }, 500);
+    };
+    prevButton.style.position = 'absolute';
+    prevButton.style.top = '50%';
+    prevButton.style.left = '20px';
+
+    // create image element
+    const img = document.createElement('img');
+    img.src = images[n - 1];
+    img.style.maxWidth = '90%';
+    img.style.maxHeight = '90%';
+
+     // create icon element
+     const iconUrl = ''; // add your icon URL here
+     const iconOpacity = 0.5; // set the opacity of the icon here
+
+     const iconImg = document.createElement('img');
+     iconImg.src = iconUrl;
+     iconImg.style.opacity = iconOpacity;
+
+     const iconContainer = document.createElement('div');
+     iconContainer.appendChild(iconImg);
+     iconContainer.style.display='none';
+
+     // append elements to popup
+     popup.appendChild(closeButton);
+     popup.appendChild(nextButton);
+     popup.appendChild(prevButton);
+     popup.appendChild(img);
+     popup.appendChild(iconContainer);
+
+     // append popup to body
+     document.body.appendChild(popup);
+}
+
     
     const popup = document.createElement('div');
     popup.style.position = 'fixed';
