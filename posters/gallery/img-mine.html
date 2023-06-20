@@ -128,54 +128,49 @@ const images = [
 
 ];
 
-    function generateImageGallery(images) {
-        const container = document.querySelector('.container');
-        container.innerHTML = '';
+function generateImageGallery(images) {
+    const container = document.querySelector('.container');
+
+  
+    const columns = container.querySelectorAll('.column');
+    columns.forEach(column => column.remove());
+
+    const mySlides = container.querySelectorAll('.mySlides');
+    mySlides.forEach(mySlide => mySlide.remove());
 
 
-        images.forEach((image, index) => {
-            const column = document.createElement('div');
-            column.className = 'column';
+    images.forEach((image, index) => {
+        const column = document.createElement('div');
+        column.className = 'column';
 
-            const img = document.createElement('img');
-            img.className = 'demo cursor';
-            img.src = image;
-            img.style.width = '100%';
-            img.onclick = () => currentSlide(index + 1);
+        const img = document.createElement('img');
+        img.className = 'demo cursor';
+        img.src = image;
+        img.style.width = '100%';
+        img.onclick = () => currentSlide(index + 1);
 
-            column.appendChild(img);
-            container.appendChild(column);
-        });
+        column.appendChild(img);
+        container.appendChild(column);
+    });
 
+  
+    images.forEach((image, index) => {
+        const mySlide = document.createElement('div');
+        mySlide.className = 'mySlides';
 
-        const captionContainer = document.createElement('div');
-        captionContainer.className = 'caption-container';
+        const numberText = document.createElement('div');
+        numberText.className = 'numbertext';
+        numberText.textContent = `${index + 1} / ${images.length}`;
 
-        const p = document.createElement('p');
-        p.id = 'caption';
+        const img = document.createElement('img');
+        img.src = image;
+        img.style.width = '100%';
 
-        captionContainer.appendChild(p);
-        container.appendChild(captionContainer);
-
-
-        images.forEach((image, index) => {
-            const mySlide = document.createElement('div');
-            mySlide.className = 'mySlides';
-
-            const numberText = document.createElement('div');
-            numberText.className = 'numbertext';
-            numberText.textContent = `${index + 1} / ${images.length}`;
-
-            const img = document.createElement('img');
-            img.src = image;
-            img.style.width = '100%';
-
-            mySlide.appendChild(numberText);
-            mySlide.appendChild(img);
-            container.appendChild(mySlide);
-        });
-    }
-
+        mySlide.appendChild(numberText);
+        mySlide.appendChild(img);
+        container.appendChild(mySlide);
+    });
+}
     generateImageGallery(images);
 
 
