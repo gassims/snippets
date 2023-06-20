@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+  width:20vw;
+  height:15vh;
+  object-fit: cover;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<body>
+
+<h2 style="text-align:center">A Simple Gallery</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/958c8c7abdc258c50c8202976b948d3d/justin_lim_tloFnD_7EpI_unsplash.jpg?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mY_jiiMCQvrKjjkohFCs_rem64_Nd9r7ludn--ju2aUT7TB3PFr9wvRETKl5axH5FWa_Cdvu4gGaI7GG8VXKBPrvqNsVNzn0zQr5diM4T6JC1tDEnom_CQh1puKd6Nmz7NF3oLob69_kkXt8x7DHr7MQ==" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/8828410630bea35cff004375c2d9bf0b/jean_philippe_delberghe_9XAnXWHu9_4_unsplash.jpg?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYWsiMCIt6HlMNTNE46cCPWPgrzwg6Lu7M8eOiHvSG6gQ0bjpdTQMoYCB298G7E92yjPVHYTY3ixmcbzXGgvJOMb9jisd_dXOz1FOH5BED24Pc2Wvcbe-C2OJCkRs1twByaQ8dzPsLeqXRgxV38c_Ox9DLIAdFTuCgdsv9cbQoiIE=" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/f266a87c384afd8d3756cacad57f353b/IMG_8477.jpeg?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYXBxR-JRhvrocR930AFjORWPiOg9G1kNgE2ChDZq2Xec2OxH7zPEo1lG9dMm3gWhmEssMl2kzwAaCkc4heMhIpFMPPtx47rJi7YA6kTBQG3ppCd2MYJa6lcyy0VIvhla7" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/7e63c575399e4f0f9654d61e767a5a38/20230615_091906.jpg?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYOgM1plYnojHR-BHeKgcmotLLRmw0HPGtr_EIn4NGXDJNJzUshKkgtMDpPNQrPNleuToLcDZAo7cr0SeO7JyvApK4xii8W2PUAj_YPWvSdFPMO6-kVIvCAccaG0dPP_KZ" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/19ca02f0e7d46540e3bfa21de7e88257/IMG_8465.jpeg?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mY3tktfCAUOOY9hjbWgph7mz2w4kn3KkZ2FHL2ZXMmMQIycAyEuFC82UXWu3SSnGfR9Q2Jy_bgQC_EG71Z7yhxip2WwT8AqS1AjttqoRqrvbf5uYsbHnJsGi6gZc2LmOaE" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/fc52b2df1982c433bfe202f5c9c94172/rachit_khurana_V3gbV_keH10_unsplash.jpg?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYKgiA2Y5IgZtkNupAKZrD9fuGVfE2rt8YCwA-_UKIrMNmpzuYBZb-bd4-4bJ8-8MpYTm7NeRuE1X8h0silJaZFBk1u6fLePq01UHji06dpArw2THiITxjafrlPbsnAlrDhpKT-rkRaQtW4G0cofsxCQ==" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/958c8c7abdc258c50c8202976b948d3d/justin_lim_tloFnD_7EpI_unsplash.jpg?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mY_jiiMCQvrKjjkohFCs_rem64_Nd9r7ludn--ju2aUT7TB3PFr9wvRETKl5axH5FWa_Cdvu4gGaI7GG8VXKBPrvqNsVNzn0zQr5diM4T6JC1tDEnom_CQh1puKd6Nmz7NF3oLob69_kkXt8x7DHr7MQ==" style="width:100%" onclick="currentSlide(1)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/8828410630bea35cff004375c2d9bf0b/jean_philippe_delberghe_9XAnXWHu9_4_unsplash.jpg?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYWsiMCIt6HlMNTNE46cCPWPgrzwg6Lu7M8eOiHvSG6gQ0bjpdTQMoYCB298G7E92yjPVHYTY3ixmcbzXGgvJOMb9jisd_dXOz1FOH5BED24Pc2Wvcbe-C2OJCkRs1twByaQ8dzPsLeqXRgxV38c_Ox9DLIAdFTuCgdsv9cbQoiIE=" style="width:100%" onclick="currentSlide(2)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/f266a87c384afd8d3756cacad57f353b/IMG_8477.jpeg?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYXBxR-JRhvrocR930AFjORWPiOg9G1kNgE2ChDZq2Xec2OxH7zPEo1lG9dMm3gWhmEssMl2kzwAaCkc4heMhIpFMPPtx47rJi7YA6kTBQG3ppCd2MYJa6lcyy0VIvhla7" style="width:100%" onclick="currentSlide(3)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/7e63c575399e4f0f9654d61e767a5a38/20230615_091906.jpg?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYOgM1plYnojHR-BHeKgcmotLLRmw0HPGtr_EIn4NGXDJNJzUshKkgtMDpPNQrPNleuToLcDZAo7cr0SeO7JyvApK4xii8W2PUAj_YPWvSdFPMO6-kVIvCAccaG0dPP_KZ" style="width:100%" onclick="currentSlide(4)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/19ca02f0e7d46540e3bfa21de7e88257/IMG_8465.jpeg?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mY3tktfCAUOOY9hjbWgph7mz2w4kn3KkZ2FHL2ZXMmMQIycAyEuFC82UXWu3SSnGfR9Q2Jy_bgQC_EG71Z7yhxip2WwT8AqS1AjttqoRqrvbf5uYsbHnJsGi6gZc2LmOaE" style="width:100%" onclick="currentSlide(5)" alt="">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/fc52b2df1982c433bfe202f5c9c94172/rachit_khurana_V3gbV_keH10_unsplash.jpg?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYKgiA2Y5IgZtkNupAKZrD9fuGVfE2rt8YCwA-_UKIrMNmpzuYBZb-bd4-4bJ8-8MpYTm7NeRuE1X8h0silJaZFBk1u6fLePq01UHji06dpArw2THiITxjafrlPbsnAlrDhpKT-rkRaQtW4G0cofsxCQ==" style="width:100%" onclick="currentSlide(6)" alt="">
+    </div>
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
