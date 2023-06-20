@@ -106,9 +106,9 @@ img {
           <p id="caption"></p>
       </div>
   </div>
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
+<!--   <a class="prev" onclick="plusSlides(-1)">❮</a>
       <a class="next" onclick="plusSlides(1)">❯</a>
-
+ -->
 <script>
 const images = [
     "https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/958c8c7abdc258c50c8202976b948d3d/justin_lim_tloFnD_7EpI_unsplash.jpg?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mY_jiiMCQvrKjjkohFCs_rem64_Nd9r7ludn--ju2aUT7TB3PFr9wvRETKl5axH5FWa_Cdvu4gGaI7GG8VXKBPrvqNsVNzn0zQr5diM4T6JC1tDEnom_CQh1puKd6Nmz7NF3oLob69_kkXt8x7DHr7MQ==",
@@ -215,7 +215,7 @@ function currentSlide(n) {
             nextSlideIndex = 1;
         }
         popup.remove();
-        currentSlide(n + 1);
+        currentSlide(nextSlideIndex);
     };
     nextButton.style.position = 'absolute';
     nextButton.style.top = '50%';
@@ -224,13 +224,13 @@ function currentSlide(n) {
     // create prev button
     const prevButton = document.createElement('button');
     prevButton.textContent = '❮';
-     prevButton.onclick = () => {
+    prevButton.onclick = () => {
         let prevSlideIndex = n - 1;
         if (prevSlideIndex < 1) {
             prevSlideIndex = images.length;
         }
         popup.remove();
-        currentSlide(n - 1);
+        currentSlide(prevSlideIndex);
     };
     prevButton.style.position = 'absolute';
     prevButton.style.top = '50%';
@@ -251,6 +251,7 @@ function currentSlide(n) {
     // append popup to body
     document.body.appendChild(popup);
 }
+
 
 
 /* function showSlides(n) {
