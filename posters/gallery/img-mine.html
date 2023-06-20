@@ -264,9 +264,9 @@ function currentSlide(n) {
     img.style.maxWidth = '90%';
     img.style.maxHeight = '90%';
 
-    
-     const iconUrl = 'https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/7b8f830038d20f106598e9253ae75a5d/logo__1_.png?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYSNNcslyjRatZeFFrhJMZtOkEHefm-rCTD-O67Hp6ftsbRnrYkTZkwalIc7NZ5zru8aEL3F_5ClAc82tHEg5ACh1gdY6gLY5Tv5eIL98uBfthsF75xhJ4Mb23AXQGoOGX';
-     const iconOpacity = 0.5; 
+     
+     const iconUrl = 'https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/7b8f830038d20f106598e9253ae75a5d/logo__1_.png?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYSNNcslyjRatZeFFrhJMZtOkEHefm-rCTD-O67Hp6ftsbRnrYkTZkwalIc7NZ5zru8aEL3F_5ClAc82tHEg5ACh1gdY6gLY5Tv5eIL98uBfthsF75xhJ4Mb23AXQGoOGX'; // add your icon URL here
+     const iconOpacity = 0.5;
 
      const iconImg = document.createElement('img');
      iconImg.src = iconUrl;
@@ -276,104 +276,16 @@ function currentSlide(n) {
      iconContainer.appendChild(iconImg);
      iconContainer.style.display='none';
 
-     
+    
      popup.appendChild(closeButton);
      popup.appendChild(nextButton);
      popup.appendChild(prevButton);
      popup.appendChild(img);
      popup.appendChild(iconContainer);
 
-     
+     // append popup to body
      document.body.appendChild(popup);
 }
-
-    
-    const popup = document.createElement('div');
-    popup.style.position = 'fixed';
-    popup.style.top = '0';
-    popup.style.left = '0';
-    popup.style.width = '100%';
-    popup.style.height = '100%';
-    popup.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
-    popup.style.display = 'flex';
-    popup.style.alignItems = 'center';
-    popup.style.justifyContent = 'center';
-
-    
-    const closeButton = document.createElement('button');
-    closeButton.textContent = 'Close';
-    closeButton.onclick = () => {
-        img.classList.add('fadeOut');
-        setTimeout(() => popup.remove(), 500);
-    };
-    closeButton.style.position = 'absolute';
-    closeButton.style.top = '20px';
-    closeButton.style.right = '20px';
-
-    
-    const nextButton = document.createElement('button');
-    nextButton.textContent = '❯';
-    nextButton.onclick = () => {
-        let nextSlideIndex = n + 1;
-        if (nextSlideIndex > images.length) {
-            nextSlideIndex = 1;
-        }
-        img.classList.add('fadeOut');
-        setTimeout(() => {
-            popup.remove();
-            currentSlide(nextSlideIndex);
-        }, 500);
-    };
-    nextButton.style.position = 'absolute';
-    nextButton.style.top = '50%';
-    nextButton.style.right = '20px';
-
-    
-    const prevButton = document.createElement('button');
-    prevButton.textContent = '❮';
-    prevButton.onclick = () => {
-        let prevSlideIndex = n - 1;
-        if (prevSlideIndex < 1) {
-            prevSlideIndex = images.length;
-        }
-        img.classList.add('fadeOut');
-        setTimeout(() => {
-            popup.remove();
-            currentSlide(prevSlideIndex);
-        }, 500);
-    };
-    prevButton.style.position = 'absolute';
-    prevButton.style.top = '50%';
-    prevButton.style.left = '20px';
-
-    
-    const img = document.createElement('img');
-    img.src = images[n - 1];
-    img.style.maxWidth = '90%';
-    img.style.maxHeight = '90%';
-
-    
-    const iconUrl = 'https://ugc.padletcdn.com/uploads/padlet-uploads/1227681803/d878bfe66f1b00728db7596401b4bbb1/lOGO.png?token=ZVIgB0nBlvXUZ5xB94h9X2LN_y0Z16SEeoDReR6kmVleP0bwALRAC6ZyClXNkOAHlqgCJuh_4pD_eqRZQ9ZYcEljkK4__Ny3yc8nUYIu64ggVzJWDUdjt0ZyNnxD97mYbmWzqkoacubWy45n90vdil12AHsfL8VSqjTve8VmsW2sP7iuCHpOXPLtnPtj6JJL6gNVuyxEbRGgfKgGbuRtFEj74u6B18YjjSgH0Dd7Nss='; // add your icon URL here
-    const iconOpacity = 0.5;
-
-    const iconImg = document.createElement('img');
-    iconImg.src = iconUrl;
-    iconImg.style.opacity = iconOpacity;
-
-    const iconContainer = document.createElement('div');
-    iconContainer.appendChild(iconImg);
-    
-     
-     popup.appendChild(closeButton);
-     popup.appendChild(nextButton);
-     popup.appendChild(prevButton);
-     popup.appendChild(img);
-     popup.appendChild(iconContainer);
-
-     
-     document.body.appendChild(popup);
-}
-
 
 
 
