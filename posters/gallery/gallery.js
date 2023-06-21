@@ -123,8 +123,7 @@ function currentSlide(n) {
     closeButton.textContent = 'Close';
     closeButton.onclick = () => {
         img.classList.add('fadeOut');
-        iconContainer.style.display='block';    
-        setTimeout(() => {popup.remove(), iconContainer.style.display='none';}, 500);
+        setTimeout(() => {popup.remove()}, 500);
     };
     closeButton.style.position = 'absolute';
     closeButton.style.top = '20px';
