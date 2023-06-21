@@ -58,38 +58,53 @@ const images = [
 ];
 
 function createGallery(images) {
-    const container = document.querySelector('.container'); 
-    const columns = container.querySelectorAll('.column');
-    columns.forEach(column => column.remove());
-    const mySlides = container.querySelectorAll('.mySlides');
-    mySlides.forEach(mySlide => mySlide.remove());
+        const container = document.querySelector('.container');
+        const columnsPerRow = 6;
+        let currentRow = 0;
+    
+        function loadNextRow() {
+            if (currentRow * columnsPerRow >= images.length) {
+                return
+            }
+    
+            for (let i = 0; i < columnsPerRow; i++) {
+                const index = currentRow * columnsPerRow + i;
+                if (index >= images.length) {
+                    break
+                }
+                    const image = images[index]
+                    const column = document.createElement('div');
+                column.className = 'column';
+                    const img = document.createElement('img');
+                img.className = 'demo cursor';
+                img.src = image;
+                img.style.width = '100%';
+                img.onclick = () => currentSlide(index + 1);
+                    column.appendChild(img);
+                container.appendChild(column);
+                        const mySlide = document.createElement('div');
+                mySlide.className = 'mySlides';
+                    const numberText = document.createElement('div');
+                numberText.className = 'numbertext';
+                numberText.textContent = `${index + 1} / ${images.length}`;
+                    const slideImg = document.createElement('img');
+                slideImg.src = image;
+                slideImg.style.width = '100%';
+                    mySlide.appendChild(numberText);
+                mySlide.appendChild(slideImg);
+                container.appendChild(mySlide);
+                    if (i === columnsPerRow - 1 || index === images.length - 1) {
+                    slideImg.onload = () => {
+                        currentRow++;
+                        loadNextRow();
+                    };
+                }
+            }
+        }
+    
+        loadNextRow();
 
-    images.forEach((image, i) => {
-        const column = document.createElement('div');
-        column.className = 'column';
-        const img = document.createElement('img');
-        img.className = 'demo cursor';
-        img.src = image;
-        img.style.width = '100%';
-        img.onclick = () => currentSlide(i + 1);
-        column.appendChild(img);
-        container.appendChild(column);
-    });
-
-  
-    images.forEach((image, index) => {
-        const mySlide = document.createElement('div');
-        mySlide.className = 'mySlides';
-        const numberText = document.createElement('div');
-        numberText.className = 'numbertext';
-        numberText.textContent = `${index + 1} / ${images.length}`;
-        const img = document.createElement('img');
-        img.src = image;
-        img.style.width = '100%';
-        mySlide.appendChild(numberText);
-        mySlide.appendChild(img);
-        container.appendChild(mySlide);
-    });
+    
 }
     createGallery(images);
 
