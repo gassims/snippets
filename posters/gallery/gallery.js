@@ -93,13 +93,6 @@ function createGallery(images) {
 }
     createGallery(images);
 
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
 function currentSlide(n) { 
     const popup = document.createElement('div');
     popup.style.position = 'fixed';
