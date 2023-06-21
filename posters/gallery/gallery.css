@@ -18,7 +18,8 @@
 
   .container {
     position: relative;
-    width: 55vw;
+/*     width: 55vw; */
+    width:100%;
     margin: 0 auto;
   }
   
@@ -65,13 +66,7 @@
     top: 0;
   }
   
-  .caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-  }
-  
+    
   .row:after {
     content: "";
     display: table;
