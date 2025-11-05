@@ -2,19 +2,7 @@
 
 <head>
     <style>
-        /* 1. Define the animation */
-        @keyframes slide-left {
-            0% {
-                transform: translateX(0);
-                /* Start position */
-            }
-
-            100% {
-                /* Move to the left by half its width (one full set of images) */
-                transform: translateX(-50%);
-            }
-        }
-
+        /* 1. Reset for full-screen slides */
         html,
         body {
             margin: 0;
@@ -23,31 +11,87 @@
             width: 100%;
         }
 
-        /* 2. Style the containers and images */
-        .marquee-container-custom {
+        /* 2. Outer Wrapper (The visible window) */
+        .carousel {
+            position: relative;
             overflow: hidden;
+            /* Hide slides outside the viewport */
+            width: 100vw;
+            height: 100vh;
+        }
+
+        /* 3. The Track (The core of the scroll snapping) */
+        .carousel__track {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            height: 100%;
+
+            /* 🌟 PROFESSIONAL FEATURE 1: Enable Scroll Snapping */
+            overflow-x: scroll;
+            /* Allows horizontal scrolling */
+            scroll-snap-type: x mandatory;
+            /* Snap precisely to slides */
+            scroll-behavior: smooth;
+            /* Makes manual scrolling smooth */
+
+            /* 🌟 PROFESSIONAL FEATURE 2: Hide the scrollbar (optional, for aesthetics) */
+            scrollbar-width: none;
+            /* Firefox */
+            -ms-overflow-style: none;
+            /* IE and Edge */
+        }
+
+        /* Remove scrollbar for Webkit browsers (Chrome, Safari) */
+        .carousel__track::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* 4. Individual Slides */
+        .carousel__slide {
+            flex: 0 0 100vw;
+            /* CRITICAL: Each slide takes up exactly 100vw */
+            list-style: none;
+
+            /* 🌟 PROFESSIONAL FEATURE 3: Align slides for snapping */
+            scroll-snap-align: center;
+        }
+
+        .carousel__slide img {
             width: 100%;
             height: 100%;
-            /* Or a specific width */
-            white-space: nowrap;
-            /* Prevents images from wrapping to a new line */
+            object-fit: cover;
+            /* Ensures images cover the slide area without stretching */
         }
 
-        .image-wrapper-custom {
-            display: flex;
-            height: 100%;
-            /* Critical: The width must be enough for all original + duplicated images */
-            /* If you use two sets of images, 200% works well for this kind of effect */
-            width: 4410%;
-            animation: slide-left 90s linear infinite;
+        /* 5. Navigation Buttons (Your styles, refined) */
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgb(0 0 0 / 21%);
+            color: white;
+            border-radius: 50%;
+            /* Changed to 50% for a perfect circle */
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            z-index: 10;
+
+            /* Good practice: Add a transition for the hover effect */
+            transition: background 0.2s ease;
         }
 
-        .image-wrapper-custom img {
-            /* Set a fixed size for each image */
-            width: 100vw;
-            height: auto;
-            align-self: center;
-            /* Spacing between images */
+        .nav-button:hover {
+            background: rgb(0 0 0 / 49%);
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
         }
     </style>
 
@@ -55,56 +99,146 @@
 </head>
 
 <body>
-    <div class="marquee-container-custom">
-        <div class="image-wrapper-custom">
-            <img class="slider-images"
-                src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/928a1a7f08c9ea93bf7a12b07c1abe94.jpg">
-            <img class="slider-images"
-                src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/7fabe8e51a0872536770bbb8e9b4a7fa.jpg">
-            <img class="slider-images"
-                src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/925054e1de34ada0bded65cf98e09dc8.jpg">
-            <img class="slider-images"
-                src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/39eb54cb40e96122a64870fff0ad00de.jpg">
-            <img class="slider-images"
-                src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/87f4594f52e47a9e976c4013a37b6172.jpg">
-            <img class="slider-images"
-                src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/5b34a896f1c9230f43728015b4a949ac.jpg">
-            <img class="slider-images"
-                src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/904519d361977b715e437bbf8650cd83.jpg">
-            <img class="slider-images"
-                src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/fe40fe0581b130c3ffbd4762ec927b49.jpg">
-            <img class="slider-images"
-                src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/d98fd4b9444cd252d8ed989be036048e.jpg">
-            <img class="slider-images"
-                src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/0e099bcf030a0f9540a1130634753c56.jpg">
-            <img class="slider-images"
-                src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/caf3cf91bc1cff01b8c45bdba277e8d8.jpg">
-            <img class="slider-images"
-                src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/35bdd87bb5a6e83170b2597528cf5bd2.jpg">
-            <img class="slider-images"
-                src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/1e532ed2b3f99fdd0ae7762a0e357382.jpg">
-            <img class="slider-images"
-                src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/1c7f2c560c8e6f9ec3047dbd48bde143.jpg">
-            <img class="slider-images"
-                src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/7db0f9fc972f7dcbe658d23510be4c91.jpg">
-            <img class="slider-images"
-                src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/dd1e9e106404e4ab05431757fe6ec1e7.jpg">
-            <img class="slider-images"
-                src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/8d733203cf7f831f3f66c62d793c8075.jpg">
-            <img class="slider-images"
-                src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/cdec302e5ca7e2b746084c171dc7d735.jpg">
-            <img class="slider-images"
-                src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/4f0333093b0f0dcac7a4bfbd3c6e80c2.jpg">
-            <img class="slider-images"
-                src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/dc8039f6116c04e76f9d5a7339dcce04.jpg">
-            <img class="slider-images"
-                src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/39cd49bd33ab26c5fe48f6ee156b395a.jpg">
-            <img class="slider-images"
-                src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/fd844df26b041ebec683ea7606f0563a.jpg">
-            <img class="slider-images"
-                src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/6a45e2392770eb5bccfbb2a67fd8e144.jpg">
-        </div>
+    <div class="carousel" aria-roledescription="carousel" aria-label="Image Slideshow">
+        <ul class="carousel__track" id="carouselTrack">
+            </li>
+            <li class="carousel__slide">
+                <img class="slider-images" style="object-position: 0% 31%;"
+                    src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/928a1a7f08c9ea93bf7a12b07c1abe94.jpg">
+            </li>
+            <li class="carousel__slide">
+                <img class="slider-images"
+                    src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/7fabe8e51a0872536770bbb8e9b4a7fa.jpg">
+            </li>
+            <li class="carousel__slide">
+                <img class="slider-images"
+                    src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/925054e1de34ada0bded65cf98e09dc8.jpg">
+            </li>
+            <li class="carousel__slide">
+                <img class="slider-images"
+                    src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/39eb54cb40e96122a64870fff0ad00de.jpg">
+            </li>
+            <li class="carousel__slide">
+                <img class="slider-images" style="object-position: 0% 26%;"
+                    src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/87f4594f52e47a9e976c4013a37b6172.jpg">
+            </li>
+            <li class="carousel__slide">
+                <img class="slider-images"
+                    src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/5b34a896f1c9230f43728015b4a949ac.jpg">
+            </li>
+            <li class="carousel__slide">
+                <img class="slider-images" style="object-position: 0% 33%;"
+                    src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/904519d361977b715e437bbf8650cd83.jpg">
+            </li>
+            <li class="carousel__slide">
+                <img class="slider-images"
+                    src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/fe40fe0581b130c3ffbd4762ec927b49.jpg">
+            </li>
+            <li class="carousel__slide">
+                <img class="slider-images" style="object-position: 50% 27%;"
+                    src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/d98fd4b9444cd252d8ed989be036048e.jpg">
+            </li>
+            <li class="carousel__slide">
+                <img class="slider-images"
+                    src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/0e099bcf030a0f9540a1130634753c56.jpg">
+            </li>
+            <li class="carousel__slide">
+                <img class="slider-images"
+                    src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/caf3cf91bc1cff01b8c45bdba277e8d8.jpg">
+            </li>
+            <li class="carousel__slide">
+                <img class="slider-images" style="object-position: 0% 34%;"
+                    src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/35bdd87bb5a6e83170b2597528cf5bd2.jpg">
+            </li>
+            <li class="carousel__slide">
+                <img class="slider-images" style="object-position: 0% 31%;"
+                    src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/1e532ed2b3f99fdd0ae7762a0e357382.jpg">
+            </li>
+            <li class="carousel__slide">
+                <img class="slider-images" style="object-position: top;"
+                    src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/1c7f2c560c8e6f9ec3047dbd48bde143.jpg">
+            </li>
+            <li class="carousel__slide">
+                <img class="slider-images"
+                    src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/7db0f9fc972f7dcbe658d23510be4c91.jpg">
+            </li>
+            <li class="carousel__slide">
+                <img class="slider-images" style="object-position: 0% 31%;"
+                    src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/dd1e9e106404e4ab05431757fe6ec1e7.jpg">
+            </li>
+            <li class="carousel__slide">
+                <img class="slider-images" style="object-position: 50% 33%;"
+                    src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/8d733203cf7f831f3f66c62d793c8075.jpg">
+            </li>
+            <li class="carousel__slide">
+                <img class="slider-images"
+                    src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/cdec302e5ca7e2b746084c171dc7d735.jpg">
+            </li>
+            <li class="carousel__slide">
+                <img class="slider-images" style="object-position: 50% 33%;"
+                    src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/4f0333093b0f0dcac7a4bfbd3c6e80c2.jpg">
+            </li>
+            <li class="carousel__slide">
+                <img class="slider-images" style="object-position: 50% 33%;"
+                    src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/dc8039f6116c04e76f9d5a7339dcce04.jpg">
+            </li>
+            <li class="carousel__slide">
+                <img class="slider-images" style="object-position: 33% 33%;"
+                    src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/39cd49bd33ab26c5fe48f6ee156b395a.jpg">
+            </li>
+            <li class="carousel__slide">
+                <img class="slider-images" style="object-position: 50% 33%;"
+                    src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/fd844df26b041ebec683ea7606f0563a.jpg">
+            </li>
+            <li class="carousel__slide">
+                <img class="slider-images"
+                    src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/6a45e2392770eb5bccfbb2a67fd8e144.jpg">
     </div>
+    <button class="nav-button prev" onclick="moveSlide(-1)">
+        < </button>
+            <button class="nav-button next" onclick="moveSlide(1)"> > </button>
+            </div>
+            <script>
+                const track = document.getElementById('carouselTrack');
+                const totalSlides = track.children.length; // e.g., 23
+                let currentSlideIndex = 0; // Tracks the currently active slide (0 to 22)
+
+                function moveSlide(direction) {
+                    let nextIndex = currentSlideIndex + direction;
+                    let scrollBehavior = 'smooth'; // Default to smooth scroll
+
+                    // 1. Check for loop boundary conditions
+                    if (nextIndex < 0) {
+                        // Going left from the first slide: Prepare to jump to the last slide
+                        nextIndex = totalSlides - 1;
+                        scrollBehavior = 'instant'; // 🚩 INSTANT JUMP
+                    } else if (nextIndex >= totalSlides) {
+                        // Going right from the last slide: Prepare to jump to the first slide
+                        nextIndex = 0;
+                        scrollBehavior = 'instant'; // 🚩 INSTANT JUMP
+                    }
+
+                    // 2. Perform the scroll
+                    track.scrollTo({
+                        left: nextIndex * track.clientWidth, // track.clientWidth is the width of one slide (100vw)
+                        behavior: scrollBehavior // Use 'instant' for loops, 'smooth' for normal slides
+                    });
+
+                    currentSlideIndex = nextIndex;
+
+                    // 3. Post-Jump Correction (Only for instant jumps)
+                    // If we just performed an instant jump, we immediately set the current index
+                    // and rely on the next click to reset the behavior to 'smooth'.
+
+                    // NOTE: For a perfect visual experience, you should not need a setTimeout 
+                    // because the 'instant' scroll is invisible. The code above is sufficient.
+                }
+
+                // Initial position setup (ensures it starts at the first slide)
+                window.onload = () => {
+                    track.scrollLeft = 0;
+                };
+            </script>
 </body>
 
 </html>
