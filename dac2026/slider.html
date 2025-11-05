@@ -15,10 +15,19 @@
             }
         }
 
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+
         /* 2. Style the containers and images */
         .marquee-container-custom {
             overflow: hidden;
             width: 100%;
+            height: 100%;
             /* Or a specific width */
             white-space: nowrap;
             /* Prevents images from wrapping to a new line */
@@ -26,6 +35,7 @@
 
         .image-wrapper-custom {
             display: flex;
+            height: 100%;
             /* Critical: The width must be enough for all original + duplicated images */
             /* If you use two sets of images, 200% works well for this kind of effect */
             width: 200%;
