@@ -191,7 +191,7 @@
                     src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/fd844df26b041ebec683ea7606f0563a.jpg">
             </li>
             <li class="carousel__slide">
-                <img class="slider-images" loading="eager"
+                <img class="slider-images" loading="eager" style="object-position: 68% 50%;"
                     src="https://receieve.my.canva.site/dag3zskgcfe/_assets/media/6a45e2392770eb5bccfbb2a67fd8e144.jpg">
     </div>
     <button class="nav-button prev" onclick="moveSlide(-1)">
@@ -203,9 +203,14 @@
                 const totalSlides = track.children.length; // e.g., 23
                 let currentSlideIndex = 0; // Tracks the index of the first visible slide
 
-                // 🚩 CHANGE 3: Define the constant width of a single slide (e.g., 1/3 of the viewport width)
-                // This is a more robust way than track.clientWidth, as it ensures we move exactly one slide width.
-                const slideWidth = track.clientWidth / 4;
+                // 🚩 NEW CONSTANT: Defines how many slides are visible at once (33.33vw each)
+                const visibleSlides = 4;
+
+                // 🚩 NEW BOUNDARY: The highest index we should allow before looping
+                const maxScrollIndex = totalSlides - visibleSlides;
+
+                // We need the slide width for the scrolling distance (still 1/3 of viewport width)
+                const slideWidth = track.clientWidth / visibleSlides;
 
                 function moveSlide(direction) {
                     let nextIndex = currentSlideIndex + direction;
@@ -213,18 +218,19 @@
 
                     // 1. Check for loop boundary conditions
                     if (nextIndex < 0) {
-                        // From the first slide (index 0), jump instantly to the start of the last slide
-                        nextIndex = totalSlides - 1;
+                        // Going left from the first slide (index 0)
+                        // Jump instantly to the start of the last viewable group (index 20)
+                        nextIndex = maxScrollIndex;
                         scrollBehavior = 'instant';
-                    } else if (nextIndex >= totalSlides) {
-                        // From the last slide, jump instantly to the first slide
+                    } else if (nextIndex > maxScrollIndex) {
+                        // Going right past the last viewable group (index 20)
+                        // Jump instantly back to the first slide (index 0)
                         nextIndex = 0;
                         scrollBehavior = 'instant';
                     }
 
-                    // 2. Perform the scroll: Scroll by (next index * width of ONE slide)
+                    // 2. Perform the scroll
                     track.scrollTo({
-                        // 🚩 IMPORTANT: We scroll by a distance equal to the next index multiplied by the fixed slide width.
                         left: nextIndex * slideWidth,
                         behavior: scrollBehavior
                     });
@@ -232,7 +238,7 @@
                     currentSlideIndex = nextIndex;
                 }
 
-                // Initial position setup
+                // Initial position setup (ensures it starts at the first slide)
                 window.onload = () => {
                     track.scrollLeft = 0;
                 };
