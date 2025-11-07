@@ -51,7 +51,7 @@
 
         /* 4. Individual Slides */
         .carousel__slide {
-            flex: 0 0 25vw;
+            flex: 0 0 33.33vw;
             /* CRITICAL: Each slide takes up exactly 100vw */
             list-style: none;
 
@@ -159,7 +159,7 @@
                 let currentSlideIndex = 0;
 
                 // 🚩 NEW CONSTANT: Define the number of visible slides
-                const visibleSlides = 4;
+                const visibleSlides = 3;
 
                 // 🚩 FIX 1 (Problem 2: Missing Last Images): The highest index we should allow before looping
                 const maxScrollIndex = totalSlides - visibleSlides; // 23 - 4 = 19
