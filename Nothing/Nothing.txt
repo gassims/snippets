@@ -1,0 +1,96 @@
+# Git Branching: Main Commands
+
+1. Check current branch:
+    git branch
+
+2. List all branches:
+    git branch -a
+
+3. Create a new branch:
+    git branch <branch-name>
+
+4. Switch to a branch:
+    git checkout <branch-name>
+    # or (newer syntax)
+    git switch <branch-name>
+
+5. Create and switch to a new branch:
+    git checkout -b <branch-name>
+    # or
+    git switch -c <branch-name>
+
+6. Merge a branch into current branch:
+    git merge <branch-name>
+
+7. Delete a branch:
+    git branch -d <branch-name>
+    # Force delete:
+    git branch -D <branch-name>
+
+8. Push a branch to remote:
+    git push origin <branch-name>
+
+9. Pull latest changes for current branch:
+    git pull
+
+10. See branch history (graph):
+     git log --oneline --graph --all
+
+## Commit Commands
+
+11. See working tree status:
+    git status
+
+12. Stage changes:
+    git add <file>
+    git add .
+    git add -p    # interactively stage hunks
+
+13. Create a commit:
+    git commit -m "Commit message"
+    # include all staged changes
+
+14. Commit all tracked changes without staging separately:
+    git commit -a -m "Commit message"
+
+15. Amend the most recent commit (edit message or add staged changes):
+    git commit --amend
+    git commit --amend -m "New commit message"
+
+16. Create an empty commit (useful for triggering CI):
+    git commit --allow-empty -m "Empty commit"
+
+17. Sign a commit:
+    git commit -S -m "Signed commit"
+
+18. Unstage a file:
+    git restore --staged <file>
+    # or older syntax
+    git reset HEAD <file>
+
+19. Undo a commit but keep changes staged/working tree:
+    git reset --soft <commit>
+
+20. Revert a commit by creating a new commit that undoes it:
+    git revert <commit>
+
+21. View commit details/patch:
+    git show <commit>
+    git log -p -1 <commit>
+
+22. Interactive rebase to rewrite commits:
+    git rebase -i <base>
+
+23. Cherry-pick a commit onto current branch:
+    git cherry-pick <commit>
+
+24. Discard local changes to a file:
+    git restore <file>
+
+25. Stash changes for later:
+    git stash
+    git stash pop
+
+26. Helpful logs for commits:
+    git log --oneline --graph --decorate
+
